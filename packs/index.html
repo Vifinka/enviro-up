@@ -1,0 +1,531 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+  <script src="http://enviro-up.netlify.compacks/index.js"></script>
+
+  <title>Enviro-up - packs</title>
+  <style>
+
+  body{
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(29, 29, 29);
+  }
+
+  @font-face { font-family: Delicious; src: url('joystix monospace.ttf');}
+
+  .menu-background {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+.menu{
+    float: left;
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+
+}
+
+.menu a:hover {
+  transition: all 0.5s ease-in;
+}
+
+.li-logo{
+    font-family: Delicious, sans-sherif;
+    color:white;
+    text-align:center;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.5s ease-in;
+}
+
+.priprava:hover{
+  background-color:rgb(200, 200, 200);
+  color:#000;
+}
+.voda:hover{
+  background-color:rgb(87, 157, 179);
+  color:#fff;
+}
+.ovzdusie:hover{
+  background-color:rgb(153, 223, 245);
+  color:#000000;
+}
+.odpad:hover{
+  background-color:rgb(124, 129, 124);
+}
+.ene:hover{
+  background-color:rgb(151, 255, 119);
+  color:#000000;
+}
+.poda:hover{
+  background-color:rgb(94, 180, 94);
+  color:#ffffff;
+}
+
+.delicious{
+  font-family: 'Delicious', sans-sherif;
+}
+
+.level-background{
+    width:90%;
+    margin:auto;
+    margin-top:90px;
+}
+
+.level-top{
+    width:80%;
+    height:100px;
+    margin:auto;
+    background-color: rgb(196, 206, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top:40px;
+    overflow:hidden;
+    border-bottom: rgb(29, 29, 29) solid 4px;
+}
+
+.level-top-25{
+    color:black;
+    background-color: rgb(133, 143, 192);
+    text-align:center;
+    width:25%;
+    float:left;
+    padding-top:35px;
+    height:65px;
+    text-shadow: #fff 2px 2px;
+    font-size:30px;
+    font-family: Delicious;
+}
+
+.level-top-15{
+    text-align:center;
+    width:15%;
+    background-color: rgb(133, 143, 192);
+    height:90px;
+    float:left;
+    padding-top:10px;
+}
+
+.level-top-60{
+    text-align:center;
+    width:60%;
+    height:70px;
+    float:left;
+    padding-top:30px;
+    font-size:30px;
+}
+
+.level-top-logo{
+    height:90%;
+}
+
+.level-bottom{
+    width:80%;
+    padding-top:20px;
+    padding-bottom:40px;
+    background-color: rgb(255, 255, 255);
+    margin:auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+}
+
+.level-bottom-inner{
+    width:90%;
+    margin:auto;
+    padding:2.5%;
+    overflow: hidden;
+}
+
+.level-bottom-inner-name{
+    float:left;
+    width:5%;
+}
+
+.level-bottom-inner-text{
+    float:right;
+    width:85%;
+}
+
+.level-bottom-inner-list-name{
+    float:left;
+    width:20%;
+}
+
+.level-bottom-inner-list-text{
+    float:left;
+    width:35%;
+}
+
+.list-outside{
+    margin:auto;
+    list-style-type:square;
+}
+
+.level-bottom-inner-postup-name{
+    float:right;
+    width:10%;
+}
+
+.level-bottom-inner-postup-text{
+    float:right;
+    width:35%;
+}
+
+.postup-outside{
+    margin:auto;
+}
+
+.level-bottom-image-background{
+    width:50%;
+    float:left;
+    text-align:center;
+    padding-top:20px;
+}
+
+.level-bottom-image{
+    width:75%;
+    border: 5px solid rgb(29, 29, 29);
+}
+
+.choose-background-outside{
+  width:100%;
+  margin-top:100px;
+  padding-top:30px;
+}
+
+.choose-background{
+  width:73%;
+  background-color: #fff;
+  margin:auto;
+  border-radius:20px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.choose-select{
+  width:65%;
+  height:45px;
+  font-size:25px;
+  border-radius:5px;
+  margin-left:5%;
+}
+
+.choose-button{
+  width:20%;
+  height:37px;
+  background-color:#DDDDDD;
+  float:right;
+  border-radius: 10px;
+  margin-right:5%;
+  border:1px solid rgb(172, 172, 172);
+  text-align:center;
+  font-size: 20px;
+  padding-top:8px;
+}
+
+select{
+  font-family:Delicious;
+}
+
+option{
+  padding:5px;
+  background-color: rgb(233, 233, 233);
+}
+
+.info-background{
+  width:100%;
+  padding-top:80px;
+  padding-bottom:40px;
+  overflow: hidden;
+  background-color:#fff;
+}
+
+.info-name{
+  margin:auto;
+  text-align:center;
+  color:black;
+  font-family: Delicious;
+  font-size: 45px;
+}
+
+.info-text{
+  width:80%;
+  padding:7.5%;
+  padding-top:5%;
+  margin:auto;
+  text-align:center;
+}
+
+.info-categories{
+  overflow:hidden;
+  width:100%;
+}
+
+.info-categories-name{
+  font-size:25px;
+  font-family:Delicious;
+  width:20%;
+  float:left;
+  text-align:center;
+}
+
+.info-categories-background{
+  width:80%;
+  float:right;
+}
+
+.info-category{
+  width:175px;
+  height:225px;
+  background-color:rgb(241, 241, 241);
+  float:right;
+  margin-right:5%;
+  margin-bottom:5%;
+  text-align:center;
+}
+
+.info-category-image{
+  width:75%;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.info-category-name{
+  text-align:center;
+  font-family:Delicious;
+}
+
+.info-uroven{
+  overflow:hidden;
+  width:100%;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.info-uroven-name{
+  width:20%;
+  font-family:Delicious;
+  font-size:25px;
+  float:left;
+  text-align:center;
+}
+
+.info-uroven-text{
+  width:80%;
+  float:right;
+}
+
+.info-uroven-background{
+  width:80%;
+  padding:5%;
+  background-color:rgb(241, 241, 241);
+  margin:auto;
+  overflow: hidden;
+}
+
+.info-uroven-square{
+  width:25%;
+  float:left;
+  height:100px;
+}
+
+.info-uroven-circle{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  margin:auto;
+  border:black solid 4px;
+  margin-bottom:25px;
+}
+
+.easy{
+  background-color:rgb(43, 221, 43);
+}
+
+.medium{
+  background-color:yellow;
+}
+
+.hard{
+  background-color:orange;
+}
+
+.EXTREME{
+  background-color:red;
+}
+
+.info-uroven-square-name{
+  text-align:center;
+  font-family:Delicious;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <ul class="menu-background">
+    <li class="menu"><span class="li-logo">Enviro-up</span></li>
+    <li class="menu"><a class="priprava" href="http://enviro-up.netlify.com">Domov</a></li>
+    <!-- <li><a class="voda" href="">Start-up pack</a></li>
+    <li><a class="ovzdusie" href="">Zeleny tyzden</a></li> -->
+    <li class="menu"><a class="ene" href="/packs">Packs</a></li>
+    <li class="menu"><a class="poda" href="">Zeleny tyzden</a></li>
+    <li class="menu"><a class="odpad" href="">Kontakt</a></li>
+  </ul>
+
+
+
+
+<div class="info-background">
+  <div class="info-name">Packs</div>
+  <div class="info-text">reeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee eeeeeeeeeee eeeeeeeeeeeeeeeee eeeeeeeeeee</div>
+  <div class="info-categories">
+    <div class="info-categories-name">Typy:</div>
+    <div class="info-categories-background">
+
+      <div class="info-category">
+        <img class="info-category-image" src="/packs/elektrina.png">
+        <p class="info-category-name">Elektrina</p>
+      </div>
+
+
+      <div class="info-category">
+        <img class="info-category-image" src="/packs/recycle.png">
+        <p class="info-category-name">Recyklovanie</p>
+      </div>
+
+
+      <div class="info-category">
+        <img class="info-category-image" src="/packs/food.png">
+        <p class="info-category-name">Jedlo</p>
+      </div>
+
+
+      <div class="info-category">
+        <img class="info-category-image" src="/packs/elektrina.png">
+        <p class="info-category-name">Elektrina</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="info-uroven">
+    <div class="info-uroven-name">Uroven:</div>
+    <div class="info-uroven-text">
+      <div class="info-uroven-background">
+
+        <div class="info-uroven-square">
+          <div class="info-uroven-circle easy"></div>
+          <p class="info-uroven-square-name">Level 1</p>
+        </div>
+
+        <div class="info-uroven-square">
+          <div class="info-uroven-circle medium"></div>
+          <p class="info-uroven-square-name">Level 2</p>
+        </div>        
+        
+        <div class="info-uroven-square">
+          <div class="info-uroven-circle hard"></div>
+          <p class="info-uroven-square-name">Level 3</p>
+        </div>        
+        
+        <div class="info-uroven-square">
+          <div class="info-uroven-circle EXTREME"></div>
+          <p class="info-uroven-square-name">Level 4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+
+<div class="choose-background-outside">
+  <div class="choose-background">
+
+    <select class="choose-select">
+      <option>Starter pack</option>
+      <option>Zo semienka na strom</option>
+      <option>Titanic</option>
+      <option>Spalena ziarovka</option>
+      <option>Tymto tempom sa tu udusime</option>
+    </select>
+
+    <div class="choose-button"><span class="delicious">HĽADAT</span></div>
+
+  </div>
+</div>
+
+
+<div id="THE_DIV">
+<!-- 
+  <div class="level-background">
+    <div class="level-top">
+        <div class="level-top-25">1 level</div>
+        <div class="level-top-60">"Zhasni za sebou vole!"</div>
+        <div class="level-top-15"><img src="/elektrina.png" class="level-top-logo"></div>
+    </div>
+
+    <div class="level-bottom">
+        <div class="level-bottom-inner">
+            <div class="level-bottom-inner-name"><span class="delicious">Pokec:</span></div>
+            <div class="level-bottom-inner-text">Treba setrit elektrinu, lebo nase tepelne elektrarne riadne znecistuju. Aj ty mozes dako pomoct</div>
+        </div>
+
+        <div class="level-bottom-inner">
+            <div class="level-bottom-inner-list-name"><span class="delicious">Pomocky:</span></div>
+            <div class="level-bottom-inner-list-text">
+                <ul class="list-outside">
+                    <li>Zapinac svetla</li>
+                    <li>Ruka</li>
+                    <li>Mozog</li>
+                </ul>
+            </div>
+
+            <div class="level-bottom-inner-postup-text">
+                <ol class="postup-outside">
+                    <li>Chod k zapinacu svetla</li>
+                    <li>Zdvihni ruku</li>
+                    <li>Namier prst na zapinac</li>
+                    <li>Stlac tlacidlo</li>
+                    <li>Hotovo. Tma.</li>
+                </ol>
+            </div>
+            <div class="level-bottom-inner-postup-name"><span class="delicious">Postup:</span></div>
+        </div>
+
+        <div class="level-bottom-image-background">
+            <img src="http://schnettepics.de/images/20110315142827_jeannettewoitzik_connected.jpg" class="level-bottom-image">
+        </div>
+        <div class="level-bottom-image-background">
+            <img src="http://schnettepics.de/images/20110315142827_jeannettewoitzik_connected.jpg" class="level-bottom-image">
+        </div>
+    </div>
+  </div>
+  -->
+</div>
+</body>
+</html>
