@@ -1,4 +1,4 @@
-var option = "<div class=\"level-background\" id=\"background\"><div class=\"level-top\"><div class=\"level-top-25\" id=\"top-left\"></div><div class=\"level-top-60\" id=\"top-center\"></div><div class=\"level-top-15\"><img src=\"\" class=\"level-top-logo\" id=\"top-right\"></div></div><div class=\"level-bottom\"><div class=\"level-bottom-inner\"><div class=\"level-bottom-inner-name\"><span class=\"delicious\">Info:</span></div><div class=\"level-bottom-inner-text\" id=\"info\"></div></div><div class=\"level-bottom-inner\"><div class=\"level-bottom-inner-list-name\"><span class=\"delicious\">Pomocky:</span></div><div class=\"level-bottom-inner-list-text\"><ul class=\"list-outside\" id=\"pomocky\"></ul></div><div class=\"level-bottom-inner-postup-text\"><ol class=\"postup-outside\" id=\"postup\"></ol></div><div class=\"level-bottom-inner-postup-name\"><span class=\"delicious\">Postup:</span></div></div></div></div>"
+var option = "<div class=\"level-background\" id=\"background\"><div class=\"level-top\"><div class=\"level-top-25\" id=\"top-left\"></div><div class=\"level-top-60\" id=\"top-center\"></div><div class=\"level-top-15\" id=\"top-right\"><img src=\"\" class=\"level-top-logo\" id=\"top-icon\"></div></div><div class=\"level-bottom\"><div class=\"level-bottom-inner\"><div class=\"level-bottom-inner-name\"><span class=\"delicious\">Info:</span></div><div class=\"level-bottom-inner-text\" id=\"info\"></div></div><div class=\"level-bottom-inner\"><div class=\"level-bottom-inner-list-name\"><span class=\"delicious\">Pomocky:</span></div><div class=\"level-bottom-inner-list-text\"><ul class=\"list-outside\" id=\"pomocky\"></ul></div><div class=\"level-bottom-inner-postup-text\"><ol class=\"postup-outside\" id=\"postup\"></ol></div><div class=\"level-bottom-inner-postup-name\"><span class=\"delicious\">Postup:</span></div></div></div></div>"
 var image = ""
 
 var Packs = "";
@@ -18,7 +18,7 @@ xhttp.send();
 
 
 function create_div(){
-    for(var i = 0; i <= Packs.length; i++){
+    for(var i = 0; i < Packs.length; i++){
         document.getElementById("THE_DIV").innerHTML += option;
     
         document.getElementById("background").id += "-" + i;
@@ -32,8 +32,10 @@ function create_div(){
         document.getElementById("top-center").id += "-" + i;
     
         document.getElementById("top-right").style.backgroundColor = Packs[i].color;
-        document.getElementById("top-right").scr = Packs[i].type_icon;
         document.getElementById("top-right").id += "-" + i;
+
+        document.getElementById("top-icon").src = Packs[i].type_icon;
+        document.getElementById("top-icon").id += "-" + i;
     
         document.getElementById("info").innerHTML = Packs[i].info;
         document.getElementById("info").id += "-" + i;
@@ -44,8 +46,8 @@ function create_div(){
         document.getElementById("postup").innerHTML = Packs[i].postup;
         document.getElementById("postup").id += "-" + i;
     
-        if(Packs[i].image_1 != "-"){
-            document.getElementById("background-" + i).innerHTML += image;
-        }
+        // if(Packs[i].image_1 != "-"){
+        //     document.getElementById("background-" + i).innerHTML += image;
+        // }
     }
 }
