@@ -17,6 +17,7 @@ xhttp.send();
 
 
 function create_div(){
+    document.getElementById("THE_DIV").innerHTML = "";
     var e = document.getElementById("pack-select");
     var choosen = e.options[e.selectedIndex].text;
 
