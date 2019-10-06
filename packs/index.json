@@ -11,7 +11,8 @@
             "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
             "photo_1":"-",
-            "photo_2":"-"
+            "photo_2":"-",
+            "pack_name": "Starter pack"
         },
         {
             "color": "green",
@@ -24,7 +25,8 @@
             "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
             "photo_1":"-",
-            "photo_2":"-"
+            "photo_2":"-",
+            "pack_name": "Starter pack"
         },
         {
             "color": "orange",
@@ -37,7 +39,8 @@
             "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
             "photo_1":"-",
-            "photo_2":"-"
+            "photo_2":"-",
+            "pack_name": "Zo semienka na strom"
         }
     ]
 }

@@ -9,7 +9,6 @@ xhttp.onreadystatechange = function() {
         var response = JSON.parse(this.responseText);
         Packs = response.packs;
         console.log(Packs);
-        create_div();
     };
 };
 
@@ -18,36 +17,42 @@ xhttp.send();
 
 
 function create_div(){
-    for(var i = 0; i < Packs.length; i++){
-        document.getElementById("THE_DIV").innerHTML += option;
-    
-        document.getElementById("background").id += "-" + i;
-    
-        document.getElementById("top-left").style.backgroundColor = Packs[i].color;
-        document.getElementById("top-left").innerHTML = Packs[i].difficulty;
-        document.getElementById("top-left").id += "-" + i;
-    
-        document.getElementById('top-center').style.backgroundColor = Packs[i].color_2;
-        document.getElementById("top-center").innerHTML = Packs[i].name;
-        document.getElementById("top-center").id += "-" + i;
-    
-        document.getElementById("top-right").style.backgroundColor = Packs[i].color;
-        document.getElementById("top-right").id += "-" + i;
+    var e = document.getElementById("pack-select");
+    var choosen = e.options[e.selectedIndex].text;
 
-        document.getElementById("top-icon").src = Packs[i].type_icon;
-        document.getElementById("top-icon").id += "-" + i;
+    for(var i = 0; i < Packs.length; i++){
+        if(choosen == Packs[i].pack_name){
+            document.getElementById("THE_DIV").innerHTML += option;
     
-        document.getElementById("info").innerHTML = Packs[i].info;
-        document.getElementById("info").id += "-" + i;
+            document.getElementById("background").id += "-" + i;
+        
+            document.getElementById("top-left").style.backgroundColor = Packs[i].color;
+            document.getElementById("top-left").innerHTML = Packs[i].difficulty;
+            document.getElementById("top-left").id += "-" + i;
+        
+            document.getElementById('top-center').style.backgroundColor = Packs[i].color_2;
+            document.getElementById("top-center").innerHTML = Packs[i].name;
+            document.getElementById("top-center").id += "-" + i;
+        
+            document.getElementById("top-right").style.backgroundColor = Packs[i].color;
+            document.getElementById("top-right").id += "-" + i;
     
-        document.getElementById("pomocky").innerHTML = Packs[i].pomocky;
-        document.getElementById("pomocky").id += "-" + i;
-    
-        document.getElementById("postup").innerHTML = Packs[i].postup;
-        document.getElementById("postup").id += "-" + i;
-    
-        // if(Packs[i].image_1 != "-"){
-        //     document.getElementById("background-" + i).innerHTML += image;
-        // }
+            document.getElementById("top-icon").src = Packs[i].type_icon;
+            document.getElementById("top-icon").id += "-" + i;
+        
+            document.getElementById("info").innerHTML = Packs[i].info;
+            document.getElementById("info").id += "-" + i;
+        
+            document.getElementById("pomocky").innerHTML = Packs[i].pomocky;
+            document.getElementById("pomocky").id += "-" + i;
+        
+            document.getElementById("postup").innerHTML = Packs[i].postup;
+            document.getElementById("postup").id += "-" + i;
+        
+            // if(Packs[i].image_1 != "-"){
+            //     document.getElementById("background-" + i).innerHTML += image;
+            // }
+        }
+       
     }
 }
