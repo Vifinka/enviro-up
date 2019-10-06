@@ -1,0 +1,46 @@
+{
+    "packs" : [
+        {
+            "color": "yellow",
+            "color_2": "lightyellow",
+            "difficulty": "level 3",
+            "name": "Pukance",
+            "type":"voda",
+            "type_icon": "/packs/elektrina.png",
+            "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
+            "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
+            "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "Starter pack"
+        },
+        {
+            "color": "green",
+            "color_2": "lightgreen",
+            "difficulty": "level 2",
+            "name": "kfc",
+            "type":"jedlo",
+            "type_icon": "/packs/jedlo.png",
+            "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
+            "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
+            "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "Starter pack"
+        },
+        {
+            "color": "orange",
+            "color_2": "lightorange",
+            "difficulty": "level 3",
+            "name": "Pukance",
+            "type":"voda",
+            "type_icon": "/packs/recycle.png",
+            "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
+            "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
+            "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "Zo semienka na strom"
+        }
+    ]
+}
