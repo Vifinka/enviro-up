@@ -1,8 +1,8 @@
 {
     "packs" : [
         {
-            "color": "yellow",
-            "color_2": "lightyellow",
+            "color": "rgb(255, 255, 100)",
+            "color_2": "rgb(255, 255, 50)",
             "difficulty": "level 3",
             "name": "Pukance",
             "type":"voda",
@@ -15,8 +15,8 @@
             "pack_name": "Starter pack"
         },
         {
-            "color": "green",
-            "color_2": "lightgreen",
+            "color": "rgb(255, 152, 169)",
+            "color_2": "rgb(255, 223, 162)",
             "difficulty": "level 2",
             "name": "kfc",
             "type":"jedlo",
