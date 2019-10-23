@@ -317,7 +317,7 @@ option{
   overflow:hidden;
   width:100%;
   padding-top:30px;
-  padding-bottom:30px;
+  padding-bottom:20px;
 }
 
 .info-uroven-name{
@@ -337,50 +337,33 @@ option{
   width:80%;
   padding:5%;
   background-color:rgb(241, 241, 241);
-  margin:auto;
+  text-align:center;
   overflow: hidden;
 }
 
 .info-uroven-square{
-  width:25%;
+  width:33.3%;
   float:left;
-  height:100px;
 }
 
 .info-uroven-circle{
   width:50px;
   height:50px;
-  border-radius:50%;
-  margin:auto;
-  border:black solid 4px;
   margin-bottom:25px;
-}
-
-.easy{
-  background-color:rgb(43, 221, 43);
-}
-
-.medium{
-  background-color:rgb(255, 255, 0);
-}
-
-.hard{
-  background-color:orange;
-  /* 
-  
-              "color": "rgb(255, 194, 80)",
-            "color_2": "rgb(255, 223, 162)",
-            
- */
-}
-
-.EXTREME{
-  background-color:red;
 }
 
 .info-uroven-square-name{
   text-align:center;
   font-family:Delicious;
+  font-size:20px;
+}
+
+.info-uroven-square-exp{
+  font-family:Delicious;
+  font-size:14px;
+  width:80%;
+  padding-left:10%;
+  text-align:center;
 }
 
 .pack-background{
@@ -490,24 +473,23 @@ option{
       <div class="info-uroven-background">
 
         <div class="info-uroven-square">
-          <div class="info-uroven-circle easy"></div>
-          <p class="info-uroven-square-name">Level 1</p>
+          <img class="info-uroven-circle" src="/packs/easy.png">
+          <p class="info-uroven-square-name">Lahke</p>
+          <p class="info-uroven-square-exp">Na dokoncenie projektu postaci jedna osoba</p>
         </div>
 
         <div class="info-uroven-square">
-          <div class="info-uroven-circle medium"></div>
-          <p class="info-uroven-square-name">Level 2</p>
+          <img class="info-uroven-circle" src="/packs/normal.png">
+          <p class="info-uroven-square-name">Pokrocile</p>
+          <p class="info-uroven-square-exp">Na dokoncenie projektu je potrebna skupina ludi</p>
         </div>        
         
         <div class="info-uroven-square">
-          <div class="info-uroven-circle hard"></div>
-          <p class="info-uroven-square-name">Level 3</p>
+          <img class="info-uroven-circle" src="/packs/hard.png">
+          <p class="info-uroven-square-name">Tazke</p>
+          <p class="info-uroven-square-exp">Na dokoncenie projektu je potrebny expert</p>
         </div>        
         
-        <div class="info-uroven-square">
-          <div class="info-uroven-circle EXTREME"></div>
-          <p class="info-uroven-square-name">Level 4</p>
-        </div>
       </div>
     </div>
   </div>
