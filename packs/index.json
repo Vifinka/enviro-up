@@ -3,7 +3,7 @@
         {
             "color": "rgb(255, 255, 100)",
             "color_2": "rgb(255, 255, 50)",
-            "difficulty": "level 3",
+            "difficulty": "/packs/easy.png",
             "name": "Pukance",
             "type":"voda",
             "type_icon": "/packs/elektrina.png",
@@ -17,7 +17,7 @@
         {
             "color": "rgb(255, 152, 169)",
             "color_2": "rgb(255, 223, 162)",
-            "difficulty": "level 2",
+            "difficulty": "/packs/normal.png",
             "name": "kfc",
             "type":"jedlo",
             "type_icon": "/packs/jedlo.png",
@@ -31,7 +31,7 @@
         {
             "color": "orange",
             "color_2": "lightorange",
-            "difficulty": "level 3",
+            "difficulty": "/packs/hard.png",
             "name": "Pukance",
             "type":"voda",
             "type_icon": "/packs/recycle.png",
