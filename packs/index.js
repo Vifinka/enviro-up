@@ -21,7 +21,7 @@ function create_div(){
             document.getElementById("background").id += "-" + i;
         
             document.getElementById("top-left").style.backgroundColor = Packs[i].color;
-            document.getElementById("top-differ").id = Packs[i].difficulty;
+            document.getElementById("top-differ").src = Packs[i].difficulty;
             document.getElementById("top-differ").id += "-" + i;
             document.getElementById("top-left").id += "-" + i;
         
