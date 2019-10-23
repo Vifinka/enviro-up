@@ -20,7 +20,7 @@
             "difficulty": "/packs/normal.png",
             "name": "kfc",
             "type":"jedlo",
-            "type_icon": "/packs/jedlo.png",
+            "type_icon": "/packs/food.png",
             "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
             "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
