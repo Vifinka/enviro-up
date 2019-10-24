@@ -12,7 +12,8 @@
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
             "photo_1":"-",
             "photo_2":"-",
-            "pack_name": "Starter pack"
+            "pack_name": "Starter pack",
+            "video":"https://www.youtube.com/embed=wDgQdr8ZkTw"
         },
         {
             "color": "rgb(255, 152, 169)",
@@ -26,7 +27,8 @@
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
             "photo_1":"-",
             "photo_2":"-",
-            "pack_name": "Starter pack"
+            "pack_name": "Starter pack",
+            "video":"-"
         },
         {
             "color": "orange",
@@ -40,7 +42,8 @@
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
             "photo_1":"-",
             "photo_2":"-",
-            "pack_name": "Zo semienka na strom"
+            "pack_name": "Zo semienka na strom",
+            "video":"https://www.youtube.com/embed=wDgQdr8ZkTw"
         }
     ]
 }
