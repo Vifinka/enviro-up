@@ -46,7 +46,7 @@ function create_div(){
             document.getElementById("postup").id += "-" + i;
         
             if(Packs[i].video != "-"){
-                document.getElementById("background" + i). innerHTML += video_div;
+                document.getElementById("background-" + i). innerHTML += video_div;
                 document.getElementById("level-video").src = Packs[i].video;
                 document.getElementById("level-video").id += "-" + i;
             }
