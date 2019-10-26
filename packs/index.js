@@ -71,6 +71,7 @@ xhttp.onreadystatechange = function() {
         var response = JSON.parse(this.responseText);
         Packs = response.packs;
         console.log(Packs);
+        create_div();
     };
 };
 
