@@ -16,6 +16,21 @@
             "video":"https://www.youtube.com/embed/wDgQdr8ZkTw"
         },
         {
+            "color": "green",
+            "color_2": "lightgreen",
+            "difficulty": "/packs/hard.png",
+            "name": "Pukance",
+            "type":"voda",
+            "type_icon": "/packs/elektrina.png",
+            "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "Starter pack",
+            "video":"https://www.youtube.com/embed/wDgQdr8ZkTw"
+        },
+        {
             "color": "rgb(255, 152, 169)",
             "color_2": "rgb(255, 223, 162)",
             "difficulty": "/packs/normal.png",
@@ -43,6 +58,21 @@
             "photo_1":"-",
             "photo_2":"-",
             "pack_name": "Zo semienka na strom",
+            "video":"https://www.youtube.com/embed/wDgQdr8ZkTw"
+        },
+        {
+            "color": "rgb(255, 255, 100)",
+            "color_2": "rgb(255, 255, 50)",
+            "difficulty": "/packs/normal.png",
+            "name": "Pukance",
+            "type":"voda",
+            "type_icon": "/packs/elektrina.png",
+            "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
+            "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "Starter pack",
             "video":"https://www.youtube.com/embed/wDgQdr8ZkTw"
         }
     ]
