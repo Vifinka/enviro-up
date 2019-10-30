@@ -60,7 +60,7 @@ function create_div(){
                 document.getElementById("level-bottom" + "-" + i).innerHTML = "<div class=\"level-bottom-inner\">";
 
                 if(Packs[i].pomocky != "-"){
-                    document.getElementById("level-bottom" + "-" + i).innerHTML += info_pomocky;
+                    document.getElementById("level-bottom" + "-" + i).innerHTML += pomocky_div;
                     document.getElementById("pomocky").innerHTML = Packs[i].pomocky;
                     document.getElementById("pomocky").id += "-" + i;
     
@@ -68,7 +68,7 @@ function create_div(){
                 }
     
                 if(Packs[i].postup != "-"){
-                    document.getElementById("level-bottom" + "-" + i).innerHTML += info_postup;
+                    document.getElementById("level-bottom" + "-" + i).innerHTML += postup_div;
                     document.getElementById("postup").innerHTML = Packs[i].postup;
                     document.getElementById("postup").id += "-" + i;
                 }
