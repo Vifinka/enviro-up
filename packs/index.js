@@ -52,7 +52,6 @@ function create_div(){
                 document.getElementById("level-bottom" + "-" + i).innerHTML += info_div;
                 document.getElementById("info").innerHTML = Packs[i].info;
                 document.getElementById("info").id += "-" + i;
-                alert("info");
             }
 
 
