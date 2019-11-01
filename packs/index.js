@@ -58,7 +58,7 @@ function create_div(){
 
             if(Packs[i].pomocky != "-" || Packs[i].postup != "-"){
 
-                document.getElementById("level-bottom" + "-" + i).innerHTML += "<div class=\"level-bottom-inner-\" id=\"level-bottom-inner-"+ i + "\" ></div>";
+                document.getElementById("level-bottom" + "-" + i).innerHTML += "<div class=\"level-bottom-inner\" id=\"level-bottom-inner-"+ i + "\" ></div>";
 
                 if(Packs[i].pomocky != "-"){
                     document.getElementById("level-bottom-inner" + "-" + i).innerHTML += pomocky_div;
