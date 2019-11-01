@@ -4,7 +4,7 @@ var option = "<div class=\"level-background\" id=\"background\"><div class=\"lev
 var info_div = "<div class=\"level-bottom-inner\"><div class=\"level-bottom-inner-name\"><span class=\"delicious\">Info:</span></div><div class=\"level-bottom-inner-text\" id=\"info\"></div></div>"
 var pomocky_div = "<div class=\"level-bottom-inner-list-name\"><span class=\"delicious\">Pomocky:</span></div><div class=\"level-bottom-inner-list-text\"><ul class=\"list-outside\" id=\"pomocky\"></ul></div>";
 var postup_div = "<div class=\"level-bottom-inner-postup-text\"><ol class=\"postup-outside\" id=\"postup\"></ol></div><div class=\"level-bottom-inner-postup-name\"><span class=\"delicious\">Postup:</span></div></div>";
-var image = ""
+var image = "";
 var Packs = "";
 var video_div = "<div class=\"level-video-outside\"><iframe width=\"600\" height=\"360\" src=\"r\" id=\"level-vid\" class=\"level-video\"></iframe></div>";
 
@@ -57,7 +57,7 @@ function create_div(){
 
             if(Packs[i].pomocky != "-" || Packs[i].postup != "-"){
 
-                document.getElementById("level-bottom" + "-" + i).innerHTML = "<div class=\"level-bottom-inner\">";
+                document.getElementById("level-bottom" + "-" + i).innerHTML += "<div class=\"level-bottom-inner\">";
 
                 if(Packs[i].pomocky != "-"){
                     document.getElementById("level-bottom" + "-" + i).innerHTML += pomocky_div;
