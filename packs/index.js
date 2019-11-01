@@ -59,7 +59,7 @@ function create_div(){
             if(Packs[i].pomocky != "-" || Packs[i].postup != "-"){
 
                 document.getElementById("level-bottom" + "-" + i).innerHTML += "<div class=\"level-bottom-inner\"></div>";
-                document.getElementsByClassName("level-bottom-inner")[1].id = "level-bottom-inner" + i;
+                document.getElementsByClassName("level-bottom-inner")[1].id = "level-bottom-inner-" + i;
 
                 if(Packs[i].pomocky != "-"){
                     document.getElementById("level-bottom-inner" + "-" + i).innerHTML += pomocky_div;
