@@ -3,7 +3,7 @@
         {
             "color": "rgb(255, 255, 100)",
             "color_2": "rgb(255, 255, 50)",
-            "difficulty": "/packs/easy.png",
+            "difficulty": "/packs/difficulty/easy.png",
             "name": "Pukance",
             "type":"voda",
             "type_icon": "/packs/icons/elektrina.png",
@@ -18,7 +18,7 @@
         {
             "color": "green",
             "color_2": "lightgreen",
-            "difficulty": "/packs/hard.png",
+            "difficulty": "/packs/difficulty/hard.png",
             "name": "Pukance",
             "type":"voda",
             "type_icon": "/packs/icons/voda.png",
@@ -33,7 +33,7 @@
         {
             "color": "rgb(255, 152, 169)",
             "color_2": "rgb(255, 223, 162)",
-            "difficulty": "/packs/normal.png",
+            "difficulty": "/packs/difficulty/normal.png",
             "name": "kfc",
             "type":"jedlo",
             "type_icon": "/packs/icons/jedlo.png",
@@ -48,10 +48,10 @@
         {
             "color": "pink",
             "color_2": "lightpink",
-            "difficulty": "/packs/icons/info.png",
+            "difficulty": "/packs/difficulty/info.png",
             "name": "Pukance",
             "type":"voda",
-            "type_icon": "/packs/recycle.png",
+            "type_icon": "/packs/icon/recycle.png",
             "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
             "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
             "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
@@ -63,10 +63,10 @@
         {
             "color": "rgb(255, 255, 50)",
             "color_2": "rgb(255, 255, 100)",
-            "difficulty": "/packs/icons/normal.png",
+            "difficulty": "/packs/difficulty/normal.png",
             "name": "Pukance",
             "type":"voda",
-            "type_icon": "/packs/ovzdusie.png",
+            "type_icon": "/packs/icons/ovzdusie.png",
             "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
             "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
             "postup":"-",
