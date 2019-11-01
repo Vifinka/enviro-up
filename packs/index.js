@@ -4,7 +4,7 @@ var option = "<div class=\"level-background\" id=\"background\"><div class=\"lev
 var info_div = "<div class=\"level-bottom-inner\"><div class=\"level-bottom-inner-name\"><span class=\"delicious\">Info:</span></div><div class=\"level-bottom-inner-text\" id=\"info\"></div></div>"
 var pomocky_div = "<div class=\"level-bottom-inner-list-name\"><span class=\"delicious\">Pomocky:</span></div><div class=\"level-bottom-inner-list-text\"><ul class=\"list-outside\" id=\"pomocky\"></ul></div>";
 var postup_div = "<div class=\"level-bottom-inner-postup-text\"><ol class=\"postup-outside\" id=\"postup\"></ol></div><div class=\"level-bottom-inner-postup-name\"><span class=\"delicious\">Postup:</span></div></div>";
-var image = "";
+var image_div = "<div class=\"level-bottom-image-background\"><img src=\"\" id=\"level-image\" class=\"level-bottom-image\"></div>";
 var Packs = "";
 var video_div = "<div class=\"level-video-outside\"><iframe width=\"600\" height=\"360\" src=\"r\" id=\"level-vid\" class=\"level-video\"></iframe></div>";
 
@@ -82,6 +82,19 @@ function create_div(){
                 document.getElementById("level-bottom" + "-" + i).innerHTML += video_div;
                 document.getElementById("level-vid").src = Packs[i].video;
                 document.getElementById("level-vid").id += "-" + i;
+            }
+
+            if(Packs[i].photo_1 != "-"){
+                document.getElementById("level-bottom-" + i).innerHTML += image_div;
+                document.getElementById("level-image").src = Packs[i].photo_1;
+                document.getElementById("level-image").id += "-" + i + "_1";
+
+                if(Packs[i].photo_2 != "-"){
+                    document.getElementById("level-bottom-" + i).innerHTML += image_div;
+                    document.getElementById("level-image").src = Packs[i].photo_2;
+                    document.getElementById("level-image").id += "-" + i + "_2";                   
+                }
+                
             }
         }
        
