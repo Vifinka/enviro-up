@@ -197,7 +197,7 @@ body{
 
 .info-org-background-name{
   font-size:25px;
-  padding-left:15%;
+  padding-left:10%;
   font-family: 'Delicious', sans-sherif;
 }
 
@@ -206,13 +206,35 @@ body{
   float:left;
   padding-top:40px;
   padding-bottom:40px;
-  background-color:yellow;
 }
 
-.info-org-org-inner{
-  width:90%;
+.info-org-inner-top{
+  width:80%;
   padding-top:30px;
   padding-bottom:30px;
+  background-color:rgb(174, 255, 167);
+  margin:auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border:3px solid rgb(174, 255, 167);
+}
+
+.info-org-inner-bottom{
+  width:80%;
+  padding-top:30px;
+  padding-bottom:30px;
+  margin:auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border:black 3px solid;
+  border-top:0px;
+}
+
+.info-org-inner-name{
+  font-size:15px;
+  font-family: 'Delicious', sans-sherif;
+  color:black;
+  padding-left:10px;
 }
     
     </style>
@@ -289,8 +311,15 @@ body{
 
   <div class="info-org-background">
     <div class="info-org-background-name">Blizsie info k udalostiam:</div>
-    <div class="info-org-half"></div>
-    <div class="info-org-half"></div>
+
+
+    <div class="info-org-half">
+      <div class="info-org-inner-top">
+        <div class="info-org-inner-name">1.9.2019</div>
+      </div> 
+      <div class="info-org-inner-bottom"></div>
+    </div>
+    
 
   </div>
 
