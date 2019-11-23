@@ -269,6 +269,60 @@ body{
   color:white;
 }
 
+
+.choose-background{
+  width:73%;
+  background-color: #fff;
+  margin:auto;
+  border-radius:20px;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.choose-select{
+  width:50%;
+  height:45px;
+  font-size:25px;
+  border-radius:5px;
+  margin-left:5%;
+}
+
+.choose-button{
+  width:20%;
+  height:37px;
+  background-color:#DDDDDD;
+  border-radius: 10px;
+  margin-right:5%;
+  border:1px solid rgb(172, 172, 172);
+  text-align:center;
+  font-size: 20px;
+  padding-top:8px;
+  margin:auto;
+}
+
+select{
+  font-family:Delicious;
+}
+
+option{
+  padding:5px;
+  background-color: rgb(233, 233, 233);
+}
+
+.choose-name{
+  width:15%;
+  float:left;
+  font-family: 'Delicious', sans-sherif;
+  text-align:center;
+  padding-top:8px;
+}
+
+.choose-inner{
+  padding-top:10px;
+  padding-bottom:10px;
+  margin:auto;
+  text-align:center;
+}
     
     </style>
 
@@ -303,7 +357,7 @@ body{
         <div class="info-kalendar-7th info-kalendar-7th-border"><div class="info-kalendar-top-name">Sobota</div></div>
         <div class="info-kalendar-7th"><div class="info-kalendar-top-name">Nedela</div></div>
       </div>
-      <div class="info-kalendar-bottom">
+      <div class="info-kalendar-bottom" id="days">
         <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
         <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-choose">1</div></div>
         <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">2</div></div>
@@ -390,6 +444,45 @@ body{
   <div class="org-background-name">
     Vyhladat Organizaciu
   </div>
+
+  <div class="choose-background">
+    <!-- kategorie -->
+    <div class="choose-inner">
+        <div class="choose-name">Kategoria:</div>
+
+        <select class="choose-select" id="pack-select">
+          <option>Starter pack</option>
+          <option>Zo semienka na strom</option>
+          <option>Titanic</option>
+          <option>Spalena ziarovka</option>
+          <option>Tymto tempom sa tu udusime</option>
+        </select>
+    
+    </div>
+
+    <!-- sidlo -->
+    <div class="choose-inner">
+        <div class="choose-name">Sidlo:</div>
+
+        <select class="choose-select" id="pack-select">
+          <option>Starter pack</option>
+          <option>Zo semienka na strom</option>
+          <option>Titanic</option>
+          <option>Spalena ziarovka</option>
+          <option>Tymto tempom sa tu udusime</option>
+        </select>
+    
+    </div>
+
+    <div class="choose-inner" style="padding-top:40px;">
+        <div class="choose-button" onclick="create_div()"><span class="delicious">HĽADAT</span></div>
+    </div>
+
+  </div>
+
+
+
+
 
 
 </div>
