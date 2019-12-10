@@ -146,6 +146,12 @@ li a:hover {
   padding-bottom:20px;
 }
 
+.auto-inner{
+  width:80%;
+  padding:20px;
+  background-color:rgb(255, 251, 246);
+}
+
 .autor-inner-60{
   text-align:center;
   float:right;
