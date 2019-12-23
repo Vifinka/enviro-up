@@ -328,14 +328,6 @@ option{
   text-align:center;
 }
 
-
-
-
-
-
-
-
-
 .org-choose-background{
   width:100%;
   padding-top:40px;
@@ -445,7 +437,6 @@ a{
         <li class="menu"><a class="priprava" href="http://enviro-up.netlify.com/">Domov</a></li>
         <li class="menu"><a class="ene" href="/packs">Packs</a></li>
         <li class="menu"><a class="poda" href="/zeleny_kalendar">Zeleny kalendar</a></li>
-        <li class="menu"><a class="odpad" href="">Kontakt</a></li>
     </ul>
 
 <div class="info-background">
@@ -455,7 +446,7 @@ a{
   <div class="info-name">Zeleny kalendar</div>
   <div class="info-kalendar-background">
     <div class="info-kalendar">
-      <div class="info-kalendar-month">
+      <div class="info-kalendar-month" id="calendar-name">
         September
       </div>
       <div class="info-kalendar-top">
@@ -467,7 +458,7 @@ a{
         <div class="info-kalendar-7th info-kalendar-7th-border"><div class="info-kalendar-top-name">Sobota</div></div>
         <div class="info-kalendar-7th"><div class="info-kalendar-top-name">Nedela</div></div>
       </div>
-      <div class="info-kalendar-bottom" id="days">
+      <div class="info-kalendar-bottom" id="calendar-background">
         <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
         <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-choose">1</div></div>
         <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">2</div></div>
@@ -637,3 +628,54 @@ a{
 </body>
 
 </html>
+
+
+<script>
+
+// the calendar
+
+  // the Date valuables
+var year = (new Date()).getFullYear();
+var days = new Date(year, (new Date).getMonth() + 1, 0).getDate();
+const monthNames = ["Januar", "Februar", "Marec", "April", "Maj", "Jun", "Jul", "August", "September", "Oktober", "November", "December"];
+var month_num = (new Date()).getMonth();
+console.log(days + ", " + year);
+
+  // the Event valuables
+  var a_day = "<div class=\"info-kalendar-7th-day\"><div class=\"info-kalendar-bottom-day\" id=\"day\"></div></div>";
+
+  // the month name
+document.getElementById("calendar-name").innerHTML = monthNames[month_num];
+
+
+document.getElementById("calendar-background").innerHTML = "";
+
+var date = new Date(year, month_num, 1);
+var daysNames = ['Nedela', 'Pondelok', 'Utorok', 'Streda', 'Stvrtok', 'Piatok', 'Sobota'];
+start_day = daysNames[date.getDay()];
+
+if(start_day != 'Pondelok'){
+  if(start_day != 'Nedela'){
+    for(var i; i < start_day - 1; i++){
+      document.getElementById("calendar-background").innerHTML += a_day;
+      document.getElementById("day").classList.add("info-kalendar-bottom-day-dead");
+      document.getElementById("day").id = "dead-day " + i;
+    }
+  }
+  else{
+    for(var i = 0; i < 6; i++){
+      document.getElementById("calendar-background").innerHTML += a_day;
+      document.getElementById("day").classList.add("info-kalendar-bottom-day-dead");
+      document.getElementById("day").id = "dead-day " + i;
+    }
+  }
+}
+
+for(var i = 0; i<days; i++){
+  document.getElementById("calendar-background").innerHTML += a_day;
+  document.getElementById("day").innerHTML = i+1;
+  document.getElementById("day").id += i;
+}
+
+
+</script>
