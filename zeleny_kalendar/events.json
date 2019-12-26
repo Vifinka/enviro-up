@@ -1,0 +1,42 @@
+{
+    "events" : [
+        {
+            "day": "17",
+            "month": "12",
+            "year": "2019",
+            "link":"",
+            "org":"Harabin Smiesky",
+            "name":"Zbieranie smeti",
+            "text":"bla bl bla bla bla bla bla bka bka"
+        },
+        {
+            "day": "22",
+            "month": "12",
+            "year": "2019",
+            "link":"",
+            "org":"uWu OwO",
+            "name":"Spievacie holubky",
+            "text":"bla bl bla bla bla bla bla bka bka"
+        },
+        {
+            "day": "3",
+            "month": "12",
+            "year": "2019",
+            "link":"",
+            "org":"open-slovakia",
+            "name":"Cistenie strkovca",
+            "text":"bla bl bla bla bla bla bla bka bka"
+        }      
+    ],
+    "org" : [
+        {
+            "name":"TeamTrees",
+            "type":"bio",
+            "type_logo":"bio.jpg",
+            "text":"reeeeeee eeee ee eeee eee eeee eee eeeeee eee ee ee e eeee eeee eeee  eee",
+            "link":"https://stranavlast.sk/",
+            "location":"ba",
+            "image_src":"logo.jpg"
+        }
+    ]
+}

@@ -8,424 +8,9 @@
     <meta name="description" content="Po slovensku su rozne akcie a dobrovolne pomoci. Zapoj sa aj ty!">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
-  
-    <title>Enviro-up - Zeleny kalendar</title>
-
-    <style>
+    <link rel="stylesheet" type="text/css" href="/zeleny_kalendar/index.css">
+    <script src="/zeleny_kalendar/index.js"></script>
     
-body{
-    margin:0;
-    font-family: 'Roboto Slab', serif;
-    background-color: rgb(29, 29, 29);
-    }
-
-  @font-face { font-family: Delicious; font-weight: bold; src: url('https://enviro-up.netlify.com/packs/joystix monospace.ttf');}
-
-  .menu-background {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position:fixed;
-  overflow: hidden;
-  background-color: #333;
-  top: 0;
-  width: 100%;
-}
-
-.menu{
-    float: left;
-}
-
-.menu a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: all 0.5s ease-in;
-
-}
-
-.menu a:hover {
-  transition: all 0.5s ease-in;
-}
-
-.li-logo{
-    font-family: Delicious, sans-sherif;
-    color:white;
-    text-align:center;
-
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: all 0.5s ease-in;
-}
-
-.priprava:hover{
-  background-color:rgb(200, 200, 200);
-  color:#000;
-}
-.voda:hover{
-  background-color:rgb(87, 157, 179);
-  color:#fff;
-}
-.ovzdusie:hover{
-  background-color:rgb(153, 223, 245);
-  color:#000000;
-}
-.odpad:hover{
-  background-color:rgb(124, 129, 124);
-}
-.ene:hover{
-  background-color:rgb(151, 255, 119);
-  color:#000000;
-}
-.poda:hover{
-  background-color:rgb(94, 180, 94);
-  color:#ffffff;
-}
-
-.delicious{
-  font-family: 'Delicious', sans-sherif;
-}
-
-
-.info-background{
-  width:100%;
-  padding-top:80px;
-  padding-bottom:40px;
-  overflow: hidden;
-  background-color:#fff;
-}
-
-.info-name{
-  margin:auto;
-  text-align:center;
-  color:black;
-  font-family: Delicious;
-  font-size: 45px;
-}
-
-.info-kalendar-background{
-  padding-top:40px;
-  padding-bottom:40px;
-  width:100%;
-}
-
-.info-kalendar{
-  width:75%;
-  margin:auto;
-}
-
-.info-kalendar-top{
-  width:100%;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color:rgb(136, 255, 125);
-  overflow:hidden;
-  border:black 4px solid;
-  border-bottom: 0px;
-}
-
-.info-kalendar-7th{
-  width:14%;
-  float:left;
-}
-
-.info-kalendar-7th-day{
-  width:14.28%;
-  float:left;
-}
-
-.info-kalendar-7th-border{
-  border-right: white 2px solid;
-}
-
-.info-kalendar-top-name{
-  padding-top:20px;
-  padding-bottom:20px;
-  font-size:15px;
-  font-family: 'Delicious', sans-sherif;
-  text-align:center;
-}
-
-.info-kalendar-bottom{
-  width:100%;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color:rgb(240, 240, 240);
-  overflow:hidden;
-  border:black 4px solid;
-}
-
-.info-kalendar-bottom-day{
-  width:40px;
-  height:40px;
-  background-color:rgb(255, 255, 255);
-  margin:auto;
-  margin-top:20px;
-  margin-bottom:20px;
-  border:black 2.5px solid;
-  padding-top:5px;
-  padding-left:5px;
-  font-family: 'Delicious', sans-sherif;
-}
-
-.info-kalendar-bottom-day-choose{
-  background-color:rgb(174, 255, 167);
-}
-
-.info-kalendar-bottom-day-dead{
-  background-color:rgb(26, 26, 26);
-}
-
-.info-kalendar-month{
-  width:100%;
-  padding-top:30px;
-  padding-bottom:30px;
-  background-color:rgb(85, 214, 73);
-  border:black 4px solid;
-  border-bottom: 0px; 
-  text-align:center;
-  font-size:30px;
-  font-family: 'Delicious', sans-sherif;
-}
-
-.info-org-background{
-  width:100%;
-  padding-top:40px;
-  overflow:hidden;
-}
-
-.info-org-background-name{
-  font-size:25px;
-  padding-left:10%;
-  font-family: 'Delicious', sans-sherif;
-}
-
-.info-org-half{
-  width:50%;
-  float:left;
-  padding-top:40px;
-  padding-bottom:40px;
-}
-
-.info-org-inner-top{
-  width:80%;
-  padding-top:30px;
-  padding-bottom:30px;
-  background-color:rgb(174, 255, 167);
-  margin:auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border:3px solid rgb(174, 255, 167);
-}
-
-.info-org-inner-bottom{
-  width:80%;
-  padding-top:20px;
-  padding-bottom:20px;
-  margin:auto;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border:black 3px solid;
-  border-top:0px;
-}
-
-.info-org-inner-top-name{
-  font-size:15px;
-  font-family: 'Delicious', sans-sherif;
-  color:black;
-  padding-left:10px;
-}
-
-.info-org-inner-bottom-event{
-  padding-left:10px;
-  font-family: 'Delicious', sans-sherif;
-}
-
-.info-org-inner-bottom-org{
-  color:rgb(82, 82, 82);
-  font-size:12px;
-  padding-left:10px;
-  padding-top:10px;
-  padding-bottom:10px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.info-org-inner-bottom-info{
-  padding:10px;
-}
-
-.org-background{
-  width:100%;
-  padding-top:40px;
-  padding-bottom:40px;
-  background-color: rgb(15, 15, 15);
-}
-
-.org-background-name{
-  font-family: 'Delicious', sans-sherif;
-  font-size: 45px;
-  padding-top:20px;
-  padding-bottom:40px;
-  text-align:center;
-  color:white;
-}
-
-
-.choose-background{
-  width:75%;
-  background-color: #fff;
-  margin:auto;
-  border-radius:20px;
-  padding-top:40px;
-  padding-bottom:40px;
-}
-
-.choose-select{
-  width:62.5%;
-  height:45px;
-  font-size:25px;
-  border-radius:5px;
-  margin-left:5%;
-}
-
-.choose-button{
-  width:20%;
-  height:37px;
-  background-color:#DDDDDD;
-  border-radius: 10px;
-  margin-right:5%;
-  border:1px solid rgb(172, 172, 172);
-  text-align:center;
-  font-size: 20px;
-  padding-top:8px;
-  margin:auto;
-}
-
-select{
-  font-family:Delicious;
-}
-
-option{
-  padding:5px;
-  background-color: rgb(233, 233, 233);
-}
-
-.choose-name{
-  width:25%;
-  float:left;
-  font-family: 'Delicious', sans-sherif;
-  text-align:center;
-  padding-top:8px;
-}
-
-.choose-inner{
-  padding-top:10px;
-  padding-bottom:10px;
-  margin:auto;
-  text-align:center;
-}
-
-.org-choose-background{
-  width:100%;
-  padding-top:40px;
-  padding-bottom:40px;
-}
-
-.org-choose-top{
-  width:65%;
-  background-color: rgb(85, 214, 73);
-  font-size:25px;
-  font-family: 'Delicious', sans-sherif;
-  margin:auto;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  overflow: hidden;
-}
-
-.org-choose-top-name{
-  padding-top:6%;
-  padding-left:5%;
-  width:75%;
-  float:left;
-}
-
-.org-choose-top-image{
-  width:20%;
-  float:left;
-  text-align: center;
-  background-color:green;
-}
-   
-.org-choose-top-image-src{
-  width:60%;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-
-.org-choose-bottom{
-  width:65%;
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color:white;
-  margin:auto;
-  overflow: hidden;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.org-choose-bottom-text-name{
-  width:20%;
-  font-family: 'Delicious', sans-sherif;
-  float:left;
-  text-align:center;
-  padding-top:20px;
-  padding-bottom:20px;
-}
-
-.org-choose-bottom-text{
-  width:75%;    
-  padding-right:5%;         
-  float:left;
-  padding-top:20px;
-  padding-bottom:20px;
-}
-
-.org-choose-bottom-image{
-  width:50%;
-  padding-top:20px;
-  padding-bottom:20px;
-  float:left;
-  text-align:center;
-}
-
-.org-choose-bottom-image-src{
-  width:70%;
-}
-
-.org-choose-bottom-button{
-  padding:15px;
-  background-color:rgb(136, 255, 125);
-  text-align: center;
-  margin:auto;
-  font-family: 'Delicious', sans-sherif;
-  width:50%;
-  transition:1s all ease;
-}
-
-.org-choose-bottom-button:hover{
-  background-color:black;
-  color:white;
-  transition:1s all ease;
-  border-radius: 4px;
-}
-
-a{
-  color:black;
-  text-decoration: none;
-}
     </style>
 
 </head>
@@ -447,7 +32,7 @@ a{
   <div class="info-kalendar-background">
     <div class="info-kalendar">
       <div class="info-kalendar-month" id="calendar-name">
-        September
+        Meno Mesiacu
       </div>
       <div class="info-kalendar-top">
         <div class="info-kalendar-7th info-kalendar-7th-border"><div class="info-kalendar-top-name">Pondelok</div></div>
@@ -458,53 +43,17 @@ a{
         <div class="info-kalendar-7th info-kalendar-7th-border"><div class="info-kalendar-top-name">Sobota</div></div>
         <div class="info-kalendar-7th"><div class="info-kalendar-top-name">Nedela</div></div>
       </div>
-      <div class="info-kalendar-bottom" id="calendar-background">
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-choose">1</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">2</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">3</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">4</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">5</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">6</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">7</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">8</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">9</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">10</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-choose">11</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">12</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">13</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">14</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">15</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">16</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">17</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">18</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">19</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">20</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">21</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">22</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">23</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">24</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-choose">25</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">26</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">27</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">28</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">29</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day">30</div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
-        <div class="info-kalendar-7th-day"><div class="info-kalendar-bottom-day info-kalendar-bottom-day-dead"></div></div>
-      </div>
+      <div class="info-kalendar-bottom" id="calendar-background"></div>
     </div>
   </div>
 
   <!-- organizations with the days -->
 
-  <div class="info-org-background">
-    <div class="info-org-background-name">Blizsie info k udalostiam:</div>
+  <div class="info-org-background" id="event-background">
+    <div class="info-org-background-name"></div>lizsie info k udalostiam:</div>
 
 
-    <div class="info-org-half">
+    <!-- <div class="info-org-half">
       <div class="info-org-inner-top">
         <div class="info-org-inner-top-name">1.9.2019</div>
       </div> 
@@ -513,30 +62,11 @@ a{
         <div class="info-org-inner-bottom-org">organizacia: TeamTree.org</div>
         <div class="info-org-inner-bottom-info">reee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee</div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="info-org-half">
-      <div class="info-org-inner-top">
-        <div class="info-org-inner-top-name">11.9.2019</div>
-      </div> 
-      <div class="info-org-inner-bottom">
-        <div class="info-org-inner-bottom-event">Odpad prec!</div>
-        <div class="info-org-inner-bottom-org">organizacia: Harabin-smiesky</div>
-        <div class="info-org-inner-bottom-info">reee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee</div>
-      </div>
-    </div>
 
-    <div class="info-org-half">
-      <div class="info-org-inner-top">
-        <div class="info-org-inner-top-name">25.9.2019</div>
-      </div> 
-      <div class="info-org-inner-bottom">
-        <div class="info-org-inner-bottom-event">Recykluj dnes</div>
-        <div class="info-org-inner-bottom-org">organizacia: odpad s.r.o.</div>
-        <div class="info-org-inner-bottom-info">reee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee</div>
-      </div>
-    </div>
   </div>
+
 </div>
 
 <!-- organizations -->
@@ -643,10 +173,24 @@ console.log(days + ", " + year);
 
   // the Event valuables
   var a_day = "<div class=\"info-kalendar-7th-day\"><div class=\"info-kalendar-bottom-day\" id=\"day\"></div></div>";
+  var a_event ="<div class=\"info-org-half\"><div class=\"info-org-inner-top\"><div class=\"info-org-inner-top-name\" id=\"event-date\">dd.mm.rrrr</div></div><div class=\"info-org-inner-bottom\"><div class=\"info-org-inner-bottom-event\" id=\"event-name\">Upratovanie Dunaja</div><div class=\"info-org-inner-bottom-org\"><a id=\"event-org\" href=\"\">TeamTree.org</a></div><div class=\"info-org-inner-bottom-info\" id=\"event-text\">reee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee</div></div></div>";
+  var Org = "";
+  var Events = "";
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          var response = JSON.parse(this.responseText);
+          Events = response.events;
+          Org = response.org;
+      };
+  };
+
+  xhttp.open("GET", "events.json", true);
+  xhttp.send();
 
   // the month name
 document.getElementById("calendar-name").innerHTML = monthNames[month_num];
-
 
 document.getElementById("calendar-background").innerHTML = "";
 
@@ -673,9 +217,30 @@ if(start_day != 'Pondelok'){
 
 for(var i = 0; i<days; i++){
   document.getElementById("calendar-background").innerHTML += a_day;
-  document.getElementById("day").innerHTML = i+1;
-  document.getElementById("day").id += i;
+  document.getElementById("day").innerHTML = i + 1;
+
+  if((i + 1) == Events[i].day && month_num + 1 == Events[i].month && year == Events[i].year){
+    document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
+    create_event(Events[i].day, Events[i].month, Events[i].year, Events[i].org, Events[i].name, Events[i].link, Events[i].text, i)
+  }
+
+  document.getElementById("day").id += i + 1;
 }
 
+
+// the event function
+function create_event(day, month, year, org, name, link, text, i){
+  document.getElementById("event-background").innerHTML += a_event;
+  document.getElementById("event-date").innerHTML = day + "." + month + "." + year;
+  document.getElementById("event-name").innerHTML = name;
+  document.getElementById("event-org").innerHTML = "organizacia: " + org;
+  document.getElementById("event-org").href = link;
+  document.getElementById("event-text").innerHTML = text;
+
+  document.getElementById("event-name").id += "-" + i;
+  document.getElementById("event-date").id += "-" + i;
+  document.getElementById("event-org").id += "-" + i;
+  document.getElementById("event-text").id += "-" + i;
+}
 
 </script>
