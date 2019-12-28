@@ -57,7 +57,7 @@
     document.getElementById("day").innerHTML = i + 1;
   
     for(var l = 0; l < Events.length; l++){
-      if((i + 1) == Events[l].day && month_num + 1 == Events[l].month && year == Events[l].year){
+      if((i + 1) == Events[l].day){
       document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
       console.log("yes");
       create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l)
