@@ -182,6 +182,7 @@ console.log(days + ", " + year);
       if (this.readyState == 4 && this.status == 200) {
           var response = JSON.parse(this.responseText);
           Events = response.events;
+          console.log(Events);
           Org = response.org;
       };
   };
