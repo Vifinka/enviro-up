@@ -219,9 +219,11 @@ for(var i = 0; i<days; i++){
   document.getElementById("calendar-background").innerHTML += a_day;
   document.getElementById("day").innerHTML = i + 1;
 
-  if((i + 1) == Events[i].day && month_num + 1 == Events[i].month && year == Events[i].year){
+  for(var l = 0; l < Events.length; l++){
+    if((i + 1) == Events[l].day && month_num + 1 == Events[l].month && year == Events[l].year){
     document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
     create_event(Events[i].day, Events[i].month, Events[i].year, Events[i].org, Events[i].name, Events[i].link, Events[i].text, i)
+    }
   }
 
   document.getElementById("day").id += i + 1;
