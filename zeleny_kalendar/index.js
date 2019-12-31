@@ -27,12 +27,13 @@
     xhttp.open("GET", "events.json", true);
     xhttp.send();
   
-    // the month name
+    // this code creates the calendar
 function calendar(){
-  document.getElementById("calendar-name").innerHTML = monthNames[month_num];
-  
   document.getElementById("calendar-background").innerHTML = "";
-  
+    // the month
+  document.getElementById("calendar-name").innerHTML = monthNames[month_num];
+    
+    // the black days (the last month)
   var date = new Date(year, month_num, 1);
   var daysNames = ['Nedela', 'Pondelok', 'Utorok', 'Streda', 'Stvrtok', 'Piatok', 'Sobota'];
   start_day = daysNames[date.getDay()];
@@ -54,15 +55,16 @@ function calendar(){
     }
   }
   
+    // the days in the month
   for(var i = 0; i<days; i++){
     document.getElementById("calendar-background").innerHTML += a_day;
     document.getElementById("day").innerHTML = i + 1;
   
+    // checking if there is a event during this day
     for(var l = 0; l < Events.length; l++){
       if((i + 1) == Events[l].day && (month_num + 1) == Events[l].month && year == Events[l].year){
         document.getElementById("day").className = "info-kalendar-bottom-day info-kalendar-bottom-day-choose";
-        console.log("yes");
-    //   create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l);
+        create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l);
       }
     }
   
@@ -71,16 +73,16 @@ function calendar(){
 } 
   
   // the event function
-//   function create_event(day, month, year, org, name, link, text, i){
-//     document.getElementById("event-background").innerHTML += a_event;
-//     document.getElementById("event-date").innerHTML = day + "." + month + "." + year;
-//     document.getElementById("event-name").innerHTML = name;
-//     document.getElementById("event-org").innerHTML = "organizacia: " + org;
-//     document.getElementById("event-org").href = link;
-//     document.getElementById("event-text").innerHTML = text;
+  function create_event(day, month, year, org, name, link, text, i){
+    document.getElementById("event-background").innerHTML += a_event;
+    document.getElementById("event-date").innerHTML = day + "." + month + "." + year;
+    document.getElementById("event-name").innerHTML = name;
+    document.getElementById("event-org").innerHTML = "organizacia: " + org;
+    document.getElementById("event-org").href = link;
+    document.getElementById("event-text").innerHTML = text;
   
-//     document.getElementById("event-name").id += "-" + i;
-//     document.getElementById("event-date").id += "-" + i;
-//     document.getElementById("event-org").id += "-" + i;
-//     document.getElementById("event-text").id += "-" + i;
-//   }
+    document.getElementById("event-name").id += "-" + i;
+    document.getElementById("event-date").id += "-" + i;
+    document.getElementById("event-org").id += "-" + i;
+    document.getElementById("event-text").id += "-" + i;
+  }
