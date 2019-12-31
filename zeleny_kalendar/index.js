@@ -1,4 +1,4 @@
-// the calendar
+// ------------------------- start of the calendar js -----------------------------
 
   // the Date valuables
   var year = (new Date()).getFullYear();
@@ -86,3 +86,11 @@ function calendar(){
     document.getElementById("event-org").id += "-" + i;
     document.getElementById("event-text").id += "-" + i;
   }
+
+
+//   ------------------------- end of the calendar js -----------------------------
+
+//   ------------------------- start of the org search js -----------------------------
+
+// the var org is in "// the Event valuables", because there is the json request and i didnt want to split it up
+
