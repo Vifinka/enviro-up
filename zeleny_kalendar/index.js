@@ -59,10 +59,9 @@ function calendar(){
     document.getElementById("day").innerHTML = i + 1;
   
     for(var l = 0; l < Events.length; l++){
-        console.log(i + 1 + "_" + Events[l].day);
-      if((i + 1) == Events[l].day){
-      document.getElementById("day").className = "info-kalendar-bottom-day-choose";
-      console.log("yes");
+      if((i + 1) == Events[l].day && (month_num + 1) == Events[l].month && year == Events[l].year){
+        document.getElementById("day").className = "info-kalendar-bottom-day info-kalendar-bottom-day-choose";
+        console.log("yes");
     //   create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l);
       }
     }
