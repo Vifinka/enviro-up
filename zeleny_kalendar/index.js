@@ -61,7 +61,7 @@ function calendar(){
     for(var l = 0; l < Events.length; l++){
         console.log(i + 1 + "_" + Events[l].day);
       if((i + 1) == Events[l].day){
-    //   document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
+      document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
       console.log("yes");
     //   create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l);
       }
