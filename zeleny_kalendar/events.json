@@ -26,7 +26,25 @@
             "org":"open-slovakia",
             "name":"Cistenie strkovca",
             "text":"bla bl bla bla bla bla bla bka bka"
-        }      
+        },
+        {
+            "day": "16",
+            "month": "1",
+            "year": "2020",
+            "link":"",
+            "org":"uWu OwO",
+            "name":"Spievacie holubky",
+            "text":"bla bl bla bla bla bla bla bka bka"
+        },
+        {
+            "day": "5",
+            "month": "1",
+            "year": "2020",
+            "link":"",
+            "org":"open-slovakia",
+            "name":"Cistenie strkovca",
+            "text":"bla bl bla bla bla bla bla bka bka"
+        },           
     ],
     "org" : [
         {
