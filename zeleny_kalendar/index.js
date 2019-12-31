@@ -19,6 +19,7 @@
             var response = JSON.parse(this.responseText);
             Events = response.events;
             console.log(Events);
+            calendar();
             Org = response.org;
         };
     };
@@ -27,6 +28,7 @@
     xhttp.send();
   
     // the month name
+function calendar(){
   document.getElementById("calendar-name").innerHTML = monthNames[month_num];
   
   document.getElementById("calendar-background").innerHTML = "";
@@ -57,29 +59,30 @@
     document.getElementById("day").innerHTML = i + 1;
   
     for(var l = 0; l < Events.length; l++){
+        alert("it works!!");
         console.log(i + 1 + "_" + Events[l].day);
-      if((i + 1) == Events[l].day){
-      document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
-      console.log("yes");
-      create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l)
-      }
+    //   if((i + 1) == Events[l].day){
+    //   document.getElementById("day").style.backgroundColor = "background-color:rgb(174, 255, 167);";
+    //   console.log("yes");
+    //   create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l)
+    //   }
     }
   
     document.getElementById("day").id += i + 1;
   }
-  
+} 
   
   // the event function
-  function create_event(day, month, year, org, name, link, text, i){
-    document.getElementById("event-background").innerHTML += a_event;
-    document.getElementById("event-date").innerHTML = day + "." + month + "." + year;
-    document.getElementById("event-name").innerHTML = name;
-    document.getElementById("event-org").innerHTML = "organizacia: " + org;
-    document.getElementById("event-org").href = link;
-    document.getElementById("event-text").innerHTML = text;
+//   function create_event(day, month, year, org, name, link, text, i){
+//     document.getElementById("event-background").innerHTML += a_event;
+//     document.getElementById("event-date").innerHTML = day + "." + month + "." + year;
+//     document.getElementById("event-name").innerHTML = name;
+//     document.getElementById("event-org").innerHTML = "organizacia: " + org;
+//     document.getElementById("event-org").href = link;
+//     document.getElementById("event-text").innerHTML = text;
   
-    document.getElementById("event-name").id += "-" + i;
-    document.getElementById("event-date").id += "-" + i;
-    document.getElementById("event-org").id += "-" + i;
-    document.getElementById("event-text").id += "-" + i;
-  }
+//     document.getElementById("event-name").id += "-" + i;
+//     document.getElementById("event-date").id += "-" + i;
+//     document.getElementById("event-org").id += "-" + i;
+//     document.getElementById("event-text").id += "-" + i;
+//   }
