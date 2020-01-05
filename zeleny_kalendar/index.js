@@ -94,3 +94,17 @@ function calendar(){
 
 // the var org is in "// the Event valuables", because there is the json request and i didnt want to split it up
 
+var e = document.getElementById("select-kat");
+var f = document.getElementById("select-kraj");
+
+var kategoria = e.options[e.selectedIndex].text;
+var kraj = f.options[f.selectedIndex].text;
+
+function load_org(){
+    alert("HELLO IT WORKS USRPGVABVPAREVTPAVR!");
+    console.log(Org);
+}
+
+function create_org(){
+
+}

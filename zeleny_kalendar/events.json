@@ -55,6 +55,24 @@
             "link":"https://stranavlast.sk/",
             "location":"ba",
             "image_src":"logo.jpg"
+        },
+        {
+            "name":"meno 2",
+            "type":"voda",
+            "type_logo":"voda.jpg",
+            "text":"text 2",
+            "link":"https://stranavlast.sk/",
+            "location":"ba",
+            "image_src":"logo.jpg"
+        },
+        {
+            "name":"meno 3",
+            "type":"elktrina",
+            "type_logo":"bio.jpg",
+            "text":"text 3",
+            "link":"https://stranavlast.sk/",
+            "location":"tr",
+            "image_src":"logo.jpg"
         }
     ]
 }
