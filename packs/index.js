@@ -33,7 +33,7 @@ function create_div(){
             document.getElementById("background").id += "-" + i;
 
             for(var f = 0; f < type_order.length; f++){
-                if(Packs[i].type = type_order[f]){
+                if(Packs[i].type == type_order[f]){
                     type_num = f;
                 }
             }
