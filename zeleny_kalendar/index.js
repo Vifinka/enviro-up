@@ -4,6 +4,7 @@
   var year = (new Date()).getFullYear();
   var days = new Date(year, (new Date).getMonth() + 1, 0).getDate();
   const monthNames = ["Januar", "Februar", "Marec", "April", "Maj", "Jun", "Jul", "August", "September", "Oktober", "November", "December"];
+  const daysNames = ['Nedela', 'Pondelok', 'Utorok', 'Streda', 'Stvrtok', 'Piatok', 'Sobota'];
   var month_num = (new Date()).getMonth();
   console.log(days + ", " + year);
   
@@ -35,8 +36,8 @@ function calendar(){
     
     // the black days (the last month)
   var date = new Date(year, month_num, 1);
-  var daysNames = ['Nedela', 'Pondelok', 'Utorok', 'Streda', 'Stvrtok', 'Piatok', 'Sobota'];
   start_day = daysNames[date.getDay()];
+  alert(start_day);
   
   if(start_day != 'Pondelok'){
     if(start_day != 'Nedela'){
@@ -99,9 +100,10 @@ var f = document.getElementById("select-kraj");
 
 var kategoria = e.options[e.selectedIndex].text;
 var kraj = f.options[f.selectedIndex].text;
+var an_org = "";
+
 
 function load_org(){
-    alert("HELLO IT WORKS USRPGVABVPAREVTPAVR!");
     console.log(Org);
 }
 
