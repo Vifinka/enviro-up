@@ -9,7 +9,7 @@ var Packs = "";
 var video_div = "<div class=\"level-video-outside\"><iframe width=\"600\" height=\"360\" src=\"r\" id=\"level-vid\" class=\"level-video\"></iframe></div>";
 
 var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
-var color_pos_light = ["light orange", "light azure", "light purple", "light yellow", "light pink", "light blue", "light green", "light grey"];
+var color_pos_light = ["lightorange", "lightazure", "lightpurple", "lightyellow", "lightpink", "lightblue", "lightgreen", "lightgrey"];
 var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
 var type_num = 0;
 
