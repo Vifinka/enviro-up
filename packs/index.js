@@ -8,6 +8,10 @@ var image_div = "<div class=\"level-bottom-image-background\"><img src=\"\" id=\
 var Packs = "";
 var video_div = "<div class=\"level-video-outside\"><iframe width=\"600\" height=\"360\" src=\"r\" id=\"level-vid\" class=\"level-video\"></iframe></div>";
 
+var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
+var color_pos_light = ["light orange", "light azure", "light purple", "light yellow", "light pink", "light blue", "light green", "light grey"];
+var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
+var type_num = 0;
 
 var mentioned = 0;
 
@@ -27,20 +31,26 @@ function create_div(){
             document.getElementById("THE_DIV").innerHTML += option;
     
             document.getElementById("background").id += "-" + i;
+
+            for(var f = 0; f < type_order.length; f++){
+                if(Packs[i].type = type_order[f]){
+                    type_num = f;
+                }
+            }
         
-            document.getElementById("top-left").style.backgroundColor = Packs[i].color;
+            document.getElementById("top-left").style.backgroundColor = color_pos[type_num];
             document.getElementById("top-left").id += "-" + i;
             document.getElementById("top-differ").src = Packs[i].difficulty;
             document.getElementById("top-differ").id += "-" + i;
         
-            document.getElementById('top-center').style.backgroundColor = Packs[i].color_2;
+            document.getElementById('top-center').style.backgroundColor = color_pos_light[type_num]
             document.getElementById("top-center").innerHTML = Packs[i].name;
             document.getElementById("top-center").id += "-" + i;
         
-            document.getElementById("top-right").style.backgroundColor = Packs[i].color;
+            document.getElementById("top-right").style.backgroundColor = color_pos[type_num];
             document.getElementById("top-right").id += "-" + i;
     
-            document.getElementById("top-icon").src = Packs[i].type_icon;
+            document.getElementById("top-icon").src = "/packs/icons/" + Packs[i].type + ".png";
             document.getElementById("top-icon").id += "-" + i;
 
             // the checking settings
@@ -102,9 +112,6 @@ function create_div(){
     document.getElementById("pack_number").innerHTML = mentioned;
     mentioned = 0;
 }
-
-
-
 
 
 var xhttp = new XMLHttpRequest();
