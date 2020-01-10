@@ -37,11 +37,10 @@ function calendar(){
     // the black days (the last month)
   var date = new Date(year, month_num, 1);
   start_day = daysNames[date.getDay()];
-  alert(start_day);
   
   if(start_day != 'Pondelok'){
     if(start_day != 'Nedela'){
-      for(var i; i < start_day - 1; i++){
+      for(var i = 0; i < start_day - 1; i++){
         document.getElementById("calendar-background").innerHTML += a_day;
         document.getElementById("day").classList.add("info-kalendar-bottom-day-dead");
         document.getElementById("day").id = "dead-day " + i;
