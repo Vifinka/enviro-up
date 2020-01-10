@@ -362,7 +362,7 @@ option{
   border-bottom-left-radius: 10px;
 }
 
-.org-choose-bottom-text-name{
+.org-bottom-text-name{
   width:20%;
   font-family: 'Delicious', sans-sherif;
   float:left;
@@ -371,7 +371,7 @@ option{
   padding-bottom:20px;
 }
 
-.org-choose-bottom-text{
+.org-bottom-text{
   width:75%;    
   padding-right:5%;         
   float:left;
