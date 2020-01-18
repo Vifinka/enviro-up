@@ -49,7 +49,7 @@
     "org" : [
         {
             "name":"TeamTrees",
-            "type":"bio",
+            "type":"Ovzdusie",
             "text":"reeeeeee eeee ee eeee eee eeee eee eeeeee eee ee ee e eeee eeee eeee  eee",
             "link":"https://stranavlast.sk/",
             "location":"Bratislavsky kraj",
@@ -57,18 +57,18 @@
         },
         {
             "name":"meno 2",
-            "type":"voda",
+            "type":"Voda",
             "text":"text 2",
             "link":"https://stranavlast.sk/",
-            "location":"ba",
+            "location":"Bratislavsky kraj",
             "image_src":"logo.jpg"
         },
         {
             "name":"meno 3",
-            "type":"elktrina",
+            "type":"Elektrina",
             "text":"text 3",
             "link":"https://stranavlast.sk/",
-            "location":"tr",
+            "location":"Trnavsky kraj",
             "image_src":"logo.jpg"
         }
     ]

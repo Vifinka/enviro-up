@@ -94,43 +94,73 @@ function calendar(){
 //   ------------------------- start of the org search js -----------------------------
 
 // the var org is in "// the Event valuables", because there is the json request and i didnt want to split it up
-
-var select_kat = e.options[e.selectedIndex].text;
+var e = document.getElementById("select-type");
+var f = document.getElementById("select-kraj");
+var select_type = e.options[e.selectedIndex].text;
 var select_kraj = f.options[f.selectedIndex].text;
 var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\">Navstivit</div></a></div>/div></div></div>";
 var an_org_image = "<div class=\"org-choose-bottom-image\"><img id=\"org-image\" src=\"\" class=\"org-choose-bottom-image-src\" id=\"image\"></div>"
 var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
+var color_pos_light = ["lightorange", "lightazure", "lightpurple", "lightyellow", "lightpink", "lightblue", "lightgreen", "lightgrey"];
 var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
 var type_num = 0;
 
 
 function load_org(){
     console.log(Org);
-    for(var i = 0; i < Org.length; i++){
-      if(select_kat == Org[i].kat && select_kraj == Org[i].kraj){
+    document.getElementById("THE_DIV").innerHTML = "";
 
-        for(var f = 0; f < type_order.length; f++){
-          if(Org[i].type == type_order[f]){
-              type_num = f;
+    if(select-kraj == "--"){
+      if(select-type == "--"){
+        for(var x = 0; x < Org.length; x++){
+          create_org();
+        }
+      }
+      else if(select-type != "--"){
+        for(var x = 0; x < Org.length; x++){
+          if(Org[x].type == select-type){
+            create_org();
           }
         }
+      }
+    }
 
-        create_org(Org[i].name, Org[i].text, Org[i].link, Org[i].image_src, i, type_order[type_num], "/zeleny_kalendar/icon/" + Org[i].type + ".png");
+    if(select-kraj != "--"){
+      if(select-type == "--"){
+        for(var x = 0; x < Org.length; x++){
+          if(Org[x].location == select-kraj){
+            create_org();
+          }
+        }
+      }
+      else if(select-type != "--"){
+        for(var x = 0; x < Org.length; x++){
+          if(Org[x].location == select-kraj && Org[x].type == select-type){
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
+          }
+        }
       }
     }
 }
 
-function create_org(name, text, link, image_src, id, color, type_src){
+function create_org(name, text, link, logo, id, color, type_src){
 
   document.getElementById("THE_DIV").innerHTML = an_org;
   document.getElementById("org-text").innerHTML = text;
   document.getElementById("org-top-name").innerHTML = name;
-  document.getElementById("org-top-image").style.backgroundColor = color;
+  document.getElementById("org-top-image").style.backgroundColor = color_pos[color];
   document.getElementById("org-top-image-src").src = type_src;
+
+
+
   document.getElementById("org").id += id;
 
-  if(){
+}
 
+function color_finder(type){
+  for(var f = 0; f < type_order.length; f++){
+    if(type == type_order[f]){
+        return f;
+    }
   }
-
 }
