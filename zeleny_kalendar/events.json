@@ -50,16 +50,14 @@
         {
             "name":"TeamTrees",
             "type":"bio",
-            "type_logo":"bio.jpg",
             "text":"reeeeeee eeee ee eeee eee eeee eee eeeeee eee ee ee e eeee eeee eeee  eee",
             "link":"https://stranavlast.sk/",
-            "location":"ba",
+            "location":"Bratislavsky kraj",
             "image_src":"logo.jpg"
         },
         {
             "name":"meno 2",
             "type":"voda",
-            "type_logo":"voda.jpg",
             "text":"text 2",
             "link":"https://stranavlast.sk/",
             "location":"ba",
@@ -68,7 +66,6 @@
         {
             "name":"meno 3",
             "type":"elktrina",
-            "type_logo":"bio.jpg",
             "text":"text 3",
             "link":"https://stranavlast.sk/",
             "location":"tr",

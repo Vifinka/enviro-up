@@ -95,18 +95,42 @@ function calendar(){
 
 // the var org is in "// the Event valuables", because there is the json request and i didnt want to split it up
 
-var e = document.getElementById("select-kat");
-var f = document.getElementById("select-kraj");
-
-var kategoria = e.options[e.selectedIndex].text;
-var kraj = f.options[f.selectedIndex].text;
-var an_org = "";
+var select_kat = e.options[e.selectedIndex].text;
+var select_kraj = f.options[f.selectedIndex].text;
+var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\">Navstivit</div></a></div>/div></div></div>";
+var an_org_image = "<div class=\"org-choose-bottom-image\"><img id=\"org-image\" src=\"\" class=\"org-choose-bottom-image-src\" id=\"image\"></div>"
+var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
+var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
+var type_num = 0;
 
 
 function load_org(){
     console.log(Org);
+    for(var i = 0; i < Org.length; i++){
+      if(select_kat == Org[i].kat && select_kraj == Org[i].kraj){
+
+        for(var f = 0; f < type_order.length; f++){
+          if(Org[i].type == type_order[f]){
+              type_num = f;
+          }
+        }
+
+        create_org(Org[i].name, Org[i].text, Org[i].link, Org[i].image_src, i, type_order[type_num], "/zeleny_kalendar/icon/" + Org[i].type + ".png");
+      }
+    }
 }
 
-function create_org(){
+function create_org(name, text, link, image_src, id, color, type_src){
+
+  document.getElementById("THE_DIV").innerHTML = an_org;
+  document.getElementById("org-text").innerHTML = text;
+  document.getElementById("org-top-name").innerHTML = name;
+  document.getElementById("org-top-image").style.backgroundColor = color;
+  document.getElementById("org-top-image-src").src = type_src;
+  document.getElementById("org").id += id;
+
+  if(){
+
+  }
 
 }
