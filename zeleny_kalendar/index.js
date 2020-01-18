@@ -110,30 +110,30 @@ function load_org(){
     console.log(Org);
     document.getElementById("THE_DIV").innerHTML = "";
 
-    if(select_kraj == "--"){
-      if(select_type == "--"){
+    if(select_kraj == "---"){
+      if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
-          create_org();
+          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
         }
       }
-      else if(select_type != "--"){
+      else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].type == select_type){
-            create_org();
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
           }
         }
       }
     }
 
-    if(select_kraj != "--"){
-      if(select_type == "--"){
+    if(select_kraj != "---"){
+      if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj){
-            create_org();
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
           }
         }
       }
-      else if(select_type != "--"){
+      else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj && Org[x].type == select_type){
             create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
