@@ -110,32 +110,32 @@ function load_org(){
     console.log(Org);
     document.getElementById("THE_DIV").innerHTML = "";
 
-    if(select-kraj == "--"){
-      if(select-type == "--"){
+    if(select_kraj == "--"){
+      if(select_type == "--"){
         for(var x = 0; x < Org.length; x++){
           create_org();
         }
       }
-      else if(select-type != "--"){
+      else if(select_type != "--"){
         for(var x = 0; x < Org.length; x++){
-          if(Org[x].type == select-type){
+          if(Org[x].type == select_type){
             create_org();
           }
         }
       }
     }
 
-    if(select-kraj != "--"){
-      if(select-type == "--"){
+    if(select_kraj != "--"){
+      if(select_type == "--"){
         for(var x = 0; x < Org.length; x++){
-          if(Org[x].location == select-kraj){
+          if(Org[x].location == select_kraj){
             create_org();
           }
         }
       }
-      else if(select-type != "--"){
+      else if(select_type != "--"){
         for(var x = 0; x < Org.length; x++){
-          if(Org[x].location == select-kraj && Org[x].type == select-type){
+          if(Org[x].location == select_kraj && Org[x].type == select_type){
             create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
           }
         }
