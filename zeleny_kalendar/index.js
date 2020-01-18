@@ -154,7 +154,10 @@ function create_org(name, text, link, logo, id, color, type_src){
 
 
   document.getElementById("org").id += id;
-
+  document.getElementById("org-text").id += id;
+  document.getElementById("org-top-name").id += id;
+  document.getElementById("org-top-image").id += id;
+  document.getElementById("org-top-image-src").id += id;
 }
 
 function color_finder(type){
