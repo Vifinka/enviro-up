@@ -139,7 +139,7 @@ function load_org(){
       else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj && Org[x].type == select_type){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), "/zeleny_kalendar/icon/" + Org[x].type + ".jpg");
           }
         }
       }
