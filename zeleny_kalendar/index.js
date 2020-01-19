@@ -98,7 +98,7 @@ var e = document.getElementById("select-type");
 var f = document.getElementById("select-kraj");
 var select_type = e.options[e.selectedIndex].text;
 var select_kraj = f.options[f.selectedIndex].text;
-var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\">Navstivit</div></a></div>/div></div></div>";
+var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\">Navstivit</div></a></div></div></div></div>";
 var an_org_image = "<div class=\"org-choose-bottom-image\"><img id=\"org-image\" src=\"\" class=\"org-choose-bottom-image-src\" id=\"image\"></div>"
 var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
 var color_pos_light = ["lightorange", "lightazure", "lightpurple", "lightyellow", "lightpink", "lightblue", "lightgreen", "lightgrey"];
@@ -113,13 +113,13 @@ function load_org(){
     if(select_kraj == "---"){
       if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
-          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
+          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
         }
       }
       else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].type == select_type){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
           }
         }
       }
@@ -129,14 +129,14 @@ function load_org(){
       if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
           }
         }
       }
       else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj && Org[x].type == select_type){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(), Org[x].type + ".jpg");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
           }
         }
       }
@@ -145,7 +145,8 @@ function load_org(){
 
 function create_org(name, text, link, logo, id, color, type_src){
 
-  document.getElementById("THE_DIV").innerHTML = an_org;
+  document.getElementById("THE_DIV").innerHTML += an_org;
+  
   document.getElementById("org-text").innerHTML = text;
   document.getElementById("org-top-name").innerHTML = name;
   document.getElementById("org-top-image").style.backgroundColor = color_pos[color];
