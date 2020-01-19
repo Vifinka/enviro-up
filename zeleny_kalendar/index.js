@@ -110,13 +110,13 @@ function load_org(){
     var f = document.getElementById("select-kraj");
     var select_type = e.options[e.selectedIndex].text;
     var select_kraj = f.options[f.selectedIndex].text;
-    
+
     document.getElementById("THE_DIV").innerHTML = "";
 
     if(select_kraj == "---"){
       if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
-          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
+          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png");
         }
       }
       else if(select_type != "---"){
@@ -152,6 +152,7 @@ function create_org(name, text, link, logo, id, color, type_src){
 
   document.getElementById("org-text").innerHTML = text;
   document.getElementById("org-top-name").innerHTML = name;
+  document.getElementById("org-top-name").style.backgroundColor = color_pos_light[color];
   document.getElementById("org-top-image").style.backgroundColor = color_pos[color];
   document.getElementById("org-top-image-src").src = type_src;
 
