@@ -139,7 +139,7 @@ function load_org(){
       else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj && Org[x].type == select_type){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), "/zeleny_kalendar/icon/" + Org[x].type + ".jpg");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".jpg");
           }
         }
       }
@@ -154,7 +154,7 @@ function create_org(name, text, link, logo, id, color, type_src){
   document.getElementById("org-top-name").innerHTML = name;
   document.getElementById("org-top-name").style.backgroundColor = color_pos_light[color];
   document.getElementById("org-top-image").style.backgroundColor = color_pos[color];
-  document.getElementById("org-top-image-src").src = type_src;
+  document.getElementById("org-top-image-src").src = "/zeleny_kalendar/icons/" + type_src;
 
 
 
