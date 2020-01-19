@@ -61,7 +61,7 @@
             "text":"text 2",
             "link":"https://stranavlast.sk/",
             "location":"Bratislavsky kraj",
-            "image_src":"logo.jpg"
+            "image_src":"https://i.pinimg.com/236x/b3/f5/05/b3f505691f10a84867497d7b58e7525a--cute-drawings-cute-stuff.jpg"
         },
         {
             "name":"meno 3",
@@ -69,7 +69,7 @@
             "text":"text 3",
             "link":"https://stranavlast.sk/",
             "location":"Trnavsky kraj",
-            "image_src":"logo.jpg"
+            "image_src":"https://i.pinimg.com/236x/b3/f5/05/b3f505691f10a84867497d7b58e7525a--cute-drawings-cute-stuff.jpg"
         }
     ]
 }
