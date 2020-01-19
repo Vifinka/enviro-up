@@ -95,10 +95,10 @@ function calendar(){
 
 // the var org is in "// the Event valuables", because there is the json request and i didnt want to split it up
 
-var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\" id=\"org-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\">Navstivit</div></a></div></div></div></div>";
-var an_org_image = "<div class=\"org-choose-bottom-image\"><img id=\"org-image\" src=\"\" class=\"org-choose-bottom-image-src\" id=\"image\"></div>"
-var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
-var color_pos_light = ["lightorange", "lightazure", "lightpurple", "lightyellow", "lightpink", "lightblue", "lightgreen", "lightgrey"];
+var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\" id=\"org-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\" id=\"rg-bottom-link-color\">Navstivit</div></a></div></div></div></div>";
+var an_org_image = "<div class=\"org-choose-bottom-image\"><img src=\"\" class=\"org-choose-bottom-image-src\" id=\"org-bottom-image\"></div>"
+var color_pos = ["orange", "azure", "rgb(124, 41, 167)", "yellow", "pink", "blue", "57ff57", "grey"];
+var color_pos_light = ["lightorange", "lightazure", "rgb(147, 25, 210)", "#ffff73", "lightpink", "lightblue", "lightgreen", "lightgrey"];
 var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
 var type_num = 0;
 
@@ -155,8 +155,14 @@ function create_org(name, text, link, logo, id, color, type_src){
   document.getElementById("org-top-name").innerHTML = name;
   document.getElementById("org-top-image").style.backgroundColor = color_pos[color];
   document.getElementById("org-top-image-src").src = "/zeleny_kalendar/icons/" + type_src;
+  document.getElementById("org-bottom-link").href = link;
+  document.getElementById("org-bottom-link-color").style.backgroundColor = color_pos_light[color];
 
-
+  if(logo != "---"){
+    document.getElementById("org-bottom-background").innerHTML += an_org_image;
+    document.getElementById("org-bottom-image").src = logo;
+    document.getElementById("org-bottom-image").id += id;
+  }
 
   document.getElementById("org").id += id;
   document.getElementById("org-top").id += id;
@@ -164,6 +170,8 @@ function create_org(name, text, link, logo, id, color, type_src){
   document.getElementById("org-top-name").id += id;
   document.getElementById("org-top-image").id += id;
   document.getElementById("org-top-image-src").id += id;
+  document.getElementById("org-bottom-link").id += id;
+  document.getElementById("org-bottom-link-color").id += id;
 }
 
 function color_finder(type){
