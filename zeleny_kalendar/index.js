@@ -151,7 +151,7 @@ function create_org(name, text, link, logo, id, color, type_src){
   document.getElementById("THE_DIV").innerHTML += an_org;
 
   document.getElementById("org-text").innerHTML = text;
-  document.getElementById("org-top-top").style.backgroundColor = color_pos_light[color];
+  document.getElementById("org-top").style.backgroundColor = color_pos_light[color];
   document.getElementById("org-top-name").innerHTML = name;
   document.getElementById("org-top-image").style.backgroundColor = color_pos[color];
   document.getElementById("org-top-image-src").src = "/zeleny_kalendar/icons/" + type_src;
@@ -159,6 +159,7 @@ function create_org(name, text, link, logo, id, color, type_src){
 
 
   document.getElementById("org").id += id;
+  document.getElementById("org-top").id += id;
   document.getElementById("org-text").id += id;
   document.getElementById("org-top-name").id += id;
   document.getElementById("org-top-image").id += id;
