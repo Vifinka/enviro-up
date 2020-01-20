@@ -97,8 +97,8 @@ function calendar(){
 
 var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\" id=\"org-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\" id=\"org-bottom-link-color\">Navstivit</div></a></div></div></div></div>";
 var an_org_image = "<div class=\"org-choose-bottom-image\"><img src=\"\" class=\"org-choose-bottom-image-src\" id=\"org-bottom-image\"></div>"
-var color_pos = ["orange", "azure", "rgb(124, 41, 167)", "yellow", "pink", "blue", "57ff57", "grey"];
-var color_pos_light = ["lightorange", "lightazure", "rgb(147, 25, 210)", "#ffff73", "lightpink", "lightblue", "lightgreen", "lightgrey"];
+var color_pos = ["#ffc251", "rgb(81, 255, 151)", "rgb(124, 41, 167)", "yellow", "#ff9294", "#599cff", "57ff57", "#acacac"];
+var color_pos_light = ["#ffd485", "rgb(149, 255, 206)", "rgb(147, 25, 210)", "#ffff73", "#faadae", "#85b6ff", "lightgreen", "#faadae"];
 var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
 var type_num = 0;
 
@@ -161,10 +161,10 @@ function create_org(name, text, link, logo, id, color, type_src){
   if(logo != "---"){
     document.getElementById("org-bottom-background").innerHTML += an_org_image;
     document.getElementById("org-bottom-image").src = logo;
-
-    document.getElementById("org-bottom-background").id += id;
-    document.getElementById("org-bottom-image").id += id;
   }
+
+  document.getElementById("org-bottom-background").id += id;
+  document.getElementById("org-bottom-image").id += id;
 
   document.getElementById("org").id += id;
   document.getElementById("org-top").id += id;

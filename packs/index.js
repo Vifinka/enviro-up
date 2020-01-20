@@ -7,9 +7,8 @@ var postup_div = "<div class=\"level-bottom-inner-postup-text\"><ol class=\"post
 var image_div = "<div class=\"level-bottom-image-background\"><img src=\"\" id=\"level-image\" class=\"level-bottom-image\"></div>";
 var Packs = "";
 var video_div = "<div class=\"level-video-outside\"><iframe width=\"600\" height=\"360\" src=\"r\" id=\"level-vid\" class=\"level-video\"></iframe></div>";
-
-var color_pos = ["orange", "azure", "purple", "yellow", "pink", "blue", "green", "grey"];
-var color_pos_light = ["lightorange", "lightazure", "lightpurple", "lightyellow", "lightpink", "lightblue", "lightgreen", "lightgrey"];
+var color_pos = ["#ffc251", "rgb(81, 255, 151)", "rgb(124, 41, 167)", "yellow", "#ff9294", "#599cff", "57ff57", "#acacac"];
+var color_pos_light = ["#ffd485", "rgb(149, 255, 206)", "rgb(147, 25, 210)", "#ffff73", "#faadae", "#85b6ff", "lightgreen", "#faadae"];
 var type_order = ["Jedlo", "Odpad", "Elektrina", "Ovzdusie", "Biodiverzita", "Info", "Voda", "Poda"];
 var type_num = 0;
 
@@ -40,7 +39,7 @@ function create_div(){
         
             document.getElementById("top-left").style.backgroundColor = color_pos[type_num];
             document.getElementById("top-left").id += "-" + i;
-            document.getElementById("top-differ").src = Packs[i].difficulty;
+            document.getElementById("top-differ").src = "/packs/difficulty/" + Packs[i].difficulty + ".png";
             document.getElementById("top-differ").id += "-" + i;
         
             document.getElementById('top-center').style.backgroundColor = color_pos_light[type_num]
