@@ -161,10 +161,11 @@ function create_org(name, text, link, logo, id, color, type_src){
   if(logo != "---"){
     document.getElementById("org-bottom-background").innerHTML += an_org_image;
     document.getElementById("org-bottom-image").src = logo;
+
+    document.getElementById("org-bottom-image").id += id;
   }
 
   document.getElementById("org-bottom-background").id += id;
-  document.getElementById("org-bottom-image").id += id;
 
   document.getElementById("org").id += id;
   document.getElementById("org-top").id += id;
