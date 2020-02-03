@@ -95,7 +95,7 @@ function calendar(){
 
 // the var org is in "// the Event valuables", because there is the json request and i didnt want to split it up
 
-var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\" id=\"org-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\" id=\"org-bottom-link-color\">Navstivit</div></a></div></div></div></div>";
+var an_org = "<div class=\"org-choose-background\" id=\"org\"><div class=\"org-choose-top\" id=\"org-top\"><div class=\"org-choose-top-name\" id=\"org-top-name\">Harabin Smiesky</div><div class=\"org-choose-top-image\" id=\"org-top-image\"><img class=\"org-choose-top-image-src\" id=\"org-top-image-src\" src=\"\"></div></div><div class=\"org-choose-bottom\"><div id=\"org-kraj-background\"><div class=\"org-bottom-text-name\">Kraj:</div><div class=\"org-bottom-text\" id=\"org-text-kraj\">kraj</div></div><div id=\"org-text-background\"><div class=\"org-bottom-text-name\">Info:</div><div class=\"org-bottom-text\" id=\"org-text\">Sak video klipy  od neho hovoria sami za seba. JA SOM VY-HRAL!!</div></div><div id=\"org-bottom-background\"><div class=\"org-choose-bottom-image\"><a href=\"\" id=\"org-bottom-link\"><div class=\"org-choose-bottom-button\" id=\"org-bottom-link-color\">Navstivit</div></a></div></div></div></div>";
 var an_org_image = "<div class=\"org-choose-bottom-image\"><img src=\"\" class=\"org-choose-bottom-image-src\" id=\"org-bottom-image\"></div>"
 var color_pos = ["#ffc251", "rgb(81, 255, 151)", "rgb(124, 41, 167)", "yellow", "#ff9294", "#599cff", "57ff57", "#acacac"];
 var color_pos_light = ["#ffd485", "rgb(149, 255, 206)", "rgb(147, 25, 210)", "#ffff73", "#faadae", "#85b6ff", "lightgreen", "#faadae"];
@@ -116,13 +116,13 @@ function load_org(){
     if(select_kraj == "---"){
       if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
-          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png");
+          create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png", Org[x].location);
         }
       }
       else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].type == select_type){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png", Org[x].location);
           }
         }
       }
@@ -132,21 +132,21 @@ function load_org(){
       if(select_type == "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png", Org[x].location);
           }
         }
       }
       else if(select_type != "---"){
         for(var x = 0; x < Org.length; x++){
           if(Org[x].location == select_kraj && Org[x].type == select_type){
-            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png");
+            create_org(Org[x].name, Org[x].text, Org[x].link, Org[x].image_src, x, color_finder(Org[x].type), Org[x].type + ".png", Org[x].location);
           }
         }
       }
     }
 }
 
-function create_org(name, text, link, logo, id, color, type_src){
+function create_org(name, text, link, logo, id, color, type_src, kraj){
 
   document.getElementById("THE_DIV").innerHTML += an_org;
 
@@ -157,6 +157,7 @@ function create_org(name, text, link, logo, id, color, type_src){
   document.getElementById("org-top-image-src").src = "/zeleny_kalendar/icons/" + type_src;
   document.getElementById("org-bottom-link").href = link;
   document.getElementById("org-bottom-link-color").style.backgroundColor = color_pos_light[color];
+  document.getElementById("org-text-kraj").innerHTML = kraj;
 
   if(logo != "---"){
     document.getElementById("org-bottom-background").innerHTML += an_org_image;
@@ -175,6 +176,9 @@ function create_org(name, text, link, logo, id, color, type_src){
   document.getElementById("org-top-image-src").id += id;
   document.getElementById("org-bottom-link").id += id;
   document.getElementById("org-bottom-link-color").id += id;
+  document.getElementById("org-kraj-background").id += id;
+  document.getElementById("org-text-kraj").id += id;
+
 }
 
 function color_finder(type){
