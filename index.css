@@ -348,11 +348,11 @@ a{
 .choose-column-button{
   margin:auto;
   text-align:center;
-  font-size:25px;
+  font-size:15px;
   color:black;
-  padding:5px;
+  padding:10px;
   font-family: 'Delicious', sans-sherif;
   background-color:rgb(88, 216, 146);
-  height:40px;
-  width:250px;
+  width:175px;
+  margin-top:20px;
 }
