@@ -18,11 +18,23 @@
   width: 100%;
 }
 
-.menu{
-    float: left;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
 }
 
-.menu a {
+li {
+  float: left;
+}
+
+li a {
   display: block;
   color: white;
   text-align: center;
@@ -32,7 +44,7 @@
 
 }
 
-.menu a:hover {
+li a:hover {
   transition: all 0.5s ease-in;
 }
 
@@ -40,6 +52,7 @@
     font-family: Delicious, sans-sherif;
     color:white;
     text-align:center;
+
     display: block;
     padding: 14px 16px;
     text-decoration: none;
