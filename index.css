@@ -69,69 +69,62 @@ body{
     width:100%;
   }
 
-  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position:fixed;
-  overflow: hidden;
-  background-color: #333;
-  top: 0;
-  width: 100%;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: all 0.5s ease-in;
-
-}
-
-li a:hover {
-  transition: all 0.5s ease-in;
-}
-
-.li-logo{
-    font-family: Delicious, sans-sherif;
-    color:white;
-    text-align:center;
-
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position:fixed;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+  }
+  
+  .menu-choice{
     display: block;
-    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
     text-decoration: none;
     transition: all 0.5s ease-in;
-}
-
-.priprava:hover{
-  background-color:rgb(200, 200, 200);
-  color:#000;
-}
-.voda:hover{
-  background-color:rgb(87, 157, 179);
-  color:#fff;
-}
-.ovzdusie:hover{
-  background-color:rgb(153, 223, 245);
-  color:#000000;
-}
-.odpad:hover{
-  background-color:rgb(124, 129, 124);
-}
-.ene:hover{
-  background-color:rgb(151, 255, 119);
-  color:#000000;
-}
-.poda:hover{
-  background-color:rgb(94, 180, 94);
-  color:#ffffff;
-}
+    float: left;
+  }
+  
+  .menu-choice:hover {
+    transition: all 0.5s ease-in;
+  }
+  
+  .li-logo{
+      font-family: Delicious, sans-sherif;
+  }
+  
+  .priprava:hover{
+    background-color:rgb(200, 200, 200);
+    color:#000;
+  }
+  .voda:hover{
+    background-color:rgb(87, 157, 179);
+    color:#fff;
+  }
+  .ovzdusie:hover{
+    background-color:rgb(153, 223, 245);
+    color:#000000;
+  }
+  .odpad:hover{
+    background-color:rgb(124, 129, 124);
+  }
+  .ene:hover{
+    background-color:rgb(151, 255, 119);
+    color:#000000;
+  }
+  .poda:hover{
+    background-color:rgb(94, 180, 94);
+    color:#ffffff;
+  }
+  
+  .delicious{
+    font-family: 'Delicious', sans-sherif;
+  }
 
 .autor-background{
   width:100%;

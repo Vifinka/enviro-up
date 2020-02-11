@@ -7,7 +7,7 @@ body{
 
   @font-face { font-family: Delicious; font-weight: bold; src: url('https://enviro-up.netlify.com/packs/joystix monospace.ttf');}
 
-  .menu-background {
+.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -18,33 +18,22 @@ body{
   width: 100%;
 }
 
-.menu{
-    float: left;
-}
-
-.menu a {
+.menu-choice{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px 20px;
   text-decoration: none;
   transition: all 0.5s ease-in;
-
+  float: left;
 }
 
-.menu a:hover {
+.menu-choice:hover {
   transition: all 0.5s ease-in;
 }
 
 .li-logo{
     font-family: Delicious, sans-sherif;
-    color:white;
-    text-align:center;
-
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: all 0.5s ease-in;
 }
 
 .priprava:hover{
