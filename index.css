@@ -369,6 +369,7 @@ a{
   background-color:rgb(88, 216, 146);
   margin:auto;
   text-align:center;
+  padding-bottom:25px;
 }
 
 .contact-name{
@@ -392,7 +393,6 @@ a{
   width: 50%;
   padding-top: 30px;
   margin: auto;
-  margin-bottom:25px;
 }
 
 .objednavka-inner-input{
