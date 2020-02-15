@@ -369,8 +369,6 @@ a{
   background-color:rgb(88, 216, 146);
   margin:auto;
   text-align:center;
-  padding-top:25px;
-  padding-bottom:25px;
 }
 
 .contact-name{
@@ -379,4 +377,19 @@ a{
   text-align:center;
   margin:auto;
   font-family: 'Merriweather', serif;
+}
+
+.objednavka-inner {
+  width: 70%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  margin: auto;
+  overflow: hidden;
+}
+
+.objednavka-inner-90 {
+  width: 50%;
+  padding-top: 30px;
+  margin: auto;
 }
