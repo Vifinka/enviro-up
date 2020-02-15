@@ -386,6 +386,7 @@ a{
   background-color: white;
   margin: auto;
   overflow: hidden;
+  margin-bottom:25px;
 }
 
 .objednavka-inner-90 {
@@ -398,6 +399,13 @@ a{
   width:100%;
   font-size:15px;
   padding:5px;
+}
+
+.objednavka-inner-input-text{
+  width:100%;
+  font-size:15px;
+  padding:5px;
+  height:250px;
 }
 
 .objednavka-inner-button{
