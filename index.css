@@ -364,3 +364,19 @@ a{
   padding-right:20px;
   transition:1s ease;
 }
+
+.contact-background{
+  background-color:rgb(88, 216, 146);
+  margin:auto;
+  text-align:center;
+  padding-top:25px;
+  padding-bottom:25px;
+}
+
+.contact-name{
+  padding-bottom:20px;
+  font-size:30px;
+  text-align:center;
+  margin:auto;
+  font-family: 'Merriweather', serif;
+}
