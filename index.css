@@ -393,3 +393,24 @@ a{
   padding-top: 30px;
   margin: auto;
 }
+
+.objednavka-inner-input{
+  width:100%;
+  font-size:15px;
+  padding:5px;
+}
+
+.objednavka-inner-button{
+  padding:5px;
+  background-color:rgb(88, 216, 146);
+  text-align:center;
+  transition: all 0.75s ease;
+  margin:auto;
+  color:black;
+}
+
+.objednavka-inner-button:hover{
+  color:rgb(88, 216, 146);
+  transition: all 0.75s ease;
+  background-color: black;
+}
