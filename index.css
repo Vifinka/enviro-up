@@ -169,6 +169,15 @@ body{
     background-color:rgb(29, 29, 29);
     color:white;
   }
+
+  .autor-image-background{
+    width:50%;
+    margin:auto;
+    text-align:center;
+    padding:30px;
+    background-color:rgb(29, 29, 29);
+  }
+
   .autor-image{
     margin:auto;
     width:85%;
