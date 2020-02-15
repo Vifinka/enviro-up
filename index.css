@@ -356,9 +356,11 @@ a{
   background-color:rgb(88, 216, 146);
   width:175px;
   margin-top:20px;
+  transition:1s ease;
 }
 
 .choose-column-button:hover{
   padding-left:20px;
   padding-right:20px;
+  transition:1s ease;
 }
