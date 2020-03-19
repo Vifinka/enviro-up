@@ -60,16 +60,23 @@
   color:#ffffff;
 }
 
-ul li ul li{ border-top: 1px solid #fff;}
+ul li ul li{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+  float: left;
+}
             
-            ul li ul{display: none;}
-            
-            ul li:hover ul{ display: block;}
-            
-            ul li ul .itam-2{position: absolute; left: 122px; top: 0; display: none;}
-            
-            ul li ul li:last-child:hover .itam-2{display: block;}
-            
+ul li ul{
+  display: none;
+}
+
+ul li:hover ul{ 
+  display: block;
+}                                    
 
 .delicious{
   font-family: 'Delicious', sans-sherif;
