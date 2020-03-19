@@ -86,7 +86,7 @@
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .menu-choice {background-color: #3e8e41;}
 
 .delicious{
   font-family: 'Delicious', sans-sherif;
