@@ -60,24 +60,16 @@
   color:#ffffff;
 }
 
-.dropdown-content {
-  display: none;
-  background-color: #333;
-  margin-top:30px;
-  max-width:100px;
-}
-
-.dropdown-content a {
-  color: white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  margin-top:10px;
-}
-
-.dropdown-content a:hover {background-color: green;}
-
-.hover_over_me:hover .dropdown-content {display: block;}
+ul li ul li{ border-top: 1px solid #fff;}
+            
+            ul li ul{display: none;}
+            
+            ul li:hover ul{ display: block;}
+            
+            ul li ul .itam-2{position: absolute; left: 122px; top: 0; display: none;}
+            
+            ul li ul li:last-child:hover .itam-2{display: block;}
+            
 
 .delicious{
   font-family: 'Delicious', sans-sherif;
