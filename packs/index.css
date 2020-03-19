@@ -60,12 +60,6 @@
   color:#ffffff;
 }
 
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -84,9 +78,7 @@
 
 .dropdown-content a:hover {background-color: green;}
 
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .menu-choice {background-color: #3e8e41;}
+.voda:hover .dropdown-content {display: block;}
 
 .delicious{
   font-family: 'Delicious', sans-sherif;
