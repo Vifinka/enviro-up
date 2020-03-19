@@ -62,19 +62,22 @@
 
 .dropdown-content {
   display: none;
-  background-color: #f1f1f1;
+  background-color: #333;
+  margin-top:30px;
+  max-width:100px;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  margin-top:10px;
 }
 
 .dropdown-content a:hover {background-color: green;}
 
-.voda:hover .dropdown-content {display: block;}
+.hover_over_me:hover .dropdown-content {display: block;}
 
 .delicious{
   font-family: 'Delicious', sans-sherif;
