@@ -64,7 +64,7 @@ ul li ul li{ border-top: 1px solid #fff;}
             
             ul li ul{display: none;}
             
-            ul li:hover ul{ display: block;}
+            .voda:hover ul{ display: block;}
             
             ul li ul .itam-2{position: absolute; left: 122px; top: 0; display: none;}
             
