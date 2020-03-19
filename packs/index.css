@@ -60,7 +60,7 @@
   color:#ffffff;
 }
 
-ul li ul li{
+ul li ul li a{
   display: block;
   color: white;
   text-align: center;
