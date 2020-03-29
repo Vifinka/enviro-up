@@ -70,7 +70,7 @@ ul li ul li a{
 }
 
 ul li ul li{
-  float:right;
+  float:left;
   z-index: -1;
   text-decoration: none;
   display: block;
@@ -84,7 +84,13 @@ ul li ul{
 
 ul li:hover ul{ 
   display: block;
-}                                    
+}
+
+.menu-choice-sub:hover{
+  background-color:rgb(94, 180, 94);
+  color:black;
+  transition: all 0.5s ease-in;
+}
 
 .delicious{
   font-family: 'Delicious', sans-sherif;
