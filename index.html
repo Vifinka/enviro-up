@@ -1,171 +1,263 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Viktoria Vargicova">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
-  <link rel="icon" href="/icon.png" type="image/png">
 
-  <title>Enviro-up</title>
-  <link rel="stylesheet" type="text/css" href="/index.css">
-  <script>
-    alert("Dobry den zelame navstevnikovi nasej stranky. Tato stranka je este stale vo vyvoji, ale napriek tomu sme sa rozhodli ukazat vam jej cast. Dakujeme za strpenie.");
-  </script>
+
 </head>
+
+<style>
+
+
+body{
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(29, 29, 29);
+  }
+
+  @font-face { font-family: Delicious; src: url('joystix monospace.ttf');}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+.menu-choice{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+  float: left;
+}
+
+.menu-choice:hover {
+  transition: all 0.5s ease-in;
+}
+
+.li-logo{
+    font-family: Delicious, sans-sherif;
+}
+
+.priprava:hover{
+  background-color:rgb(200, 200, 200);
+  color:#000;
+}
+.voda:hover{
+  background-color:rgb(87, 157, 179);
+  color:#fff;
+}
+.ovzdusie:hover{
+  background-color:rgb(153, 223, 245);
+  color:#000000;
+}
+.odpad:hover{
+  background-color:rgb(124, 129, 124);
+}
+.ene:hover{
+  background-color:rgb(151, 255, 119);
+  color:#000000;
+}
+.poda:hover{
+  background-color:rgb(94, 180, 94);
+  color:#ffffff;
+}
+
+ul li ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+ul li ul li{
+  float:left;
+  z-index: -1;
+  text-decoration: none;
+  display: block;
+}
+            
+ul li ul{
+  display: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul li:hover ul{ 
+  display: block;
+}
+
+.menu-choice-sub:hover{
+  background-color:rgb(94, 180, 94);
+  color:black;
+  transition: all 0.5s ease-in;
+}
+
+.temy{
+  width:100%;
+  background-color:#ffffff;
+  text-align:center;
+}
+
+.temy-name{
+    margin:auto;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    font-size:40px;
+    color:black;
+    padding:40px;
+}
+
+.temy-inner-90{
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+    text-align:center;
+    padding-top:30px;
+}
+
+.temy-inner-image{
+    width:10%;
+    float:left;
+    margin-left:8.333%;
+    text-align:center;
+    border-radius:25%;
+    transition:1s ease;
+}
+
+.temy-inner-image:hover{
+  transition:1s ease;
+  background-color:rgb(230, 230, 230);
+}
+
+.temy-more-background{
+  width:85%;
+  height:250px;
+  background-color:#3d3d3d;
+  color:white;
+  margin:auto;
+  text-align:center;
+}
+
+.temy-more-name{
+    margin:auto;
+    text-align:center;
+    font-family: 'Merriweather', serif;
+    font-size:30px;
+    padding:40px;
+    color:#fff;
+}
+
+.temy-more-text{
+    width:80%;
+    margin:auto;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+
 
 <body>
 
-  <ul class="menu">
-    <li><a class="menu-choice" href="https://enviro-up.netlify.com/"><span class="li-logo">Enviro-up</span></a></li>
-    <li><a class="priprava menu-choice" href="http://enviro-up.netlify.com/">Domov</a></li>
-    <li><a class="ene menu-choice" href="/packs">Packs</a></li>
-    <li><a class="poda menu-choice" href="/zeleny_kalendar">Zeleny kalendar</a></li>
-    <li><a class="voda menu-choice" class="hover_over_me" href="/zeleny_kalendar">Vzdelaj sa <span>&#x25B8;</span></a>
-    
-      <ul>
-        <li><a href="#" class="menu-choice-sub">Voda</a></li>
-        <li><a href="#" class="menu-choice-sub">Odpad</a></li>
-        <li><a href="#" class="menu-choice-sub">Ovzdusie</a></li>
-        <li><a href="#" class="menu-choice-sub">Elektrina</a></li>
-        <li><a href="#" class="menu-choice-sub">Biodiverzita</a></li>
+    <ul class="menu">
+        <li><a class="menu-choice" href="https://enviro-up.netlify.com/"><span class="li-logo">Enviro-up</span></a></li>
+        <li><a class="priprava menu-choice" href="http://enviro-up.netlify.com/">Domov</a></li>
+        <li><a class="ene menu-choice" href="/packs">Packs</a></li>
+        <li><a class="poda menu-choice" href="/zeleny_kalendar">Zeleny kalendar</a></li>
+        <li><a class="voda menu-choice" class="hover_over_me" href="/zeleny_kalendar">Vzdelaj sa <span>&#x25B8;</span></a>
+        
+          <ul>
+            <li><a href="#" class="menu-choice-sub">Voda</a></li>
+            <li><a href="#" class="menu-choice-sub">Odpad</a></li>
+            <li><a href="#" class="menu-choice-sub">Ovzdusie</a></li>
+            <li><a href="#" class="menu-choice-sub">Elektrina</a></li>
+            <li><a href="#" class="menu-choice-sub">Biodiverzita</a></li>
+          </ul>
+        
+        </li>
       </ul>
-    
-    </li>
-  </ul>
-
-  <div class="name-background">
-    <div class="name-the-name">
-        Zmena klimy je <span class="delicious"> <span class="thats-right"> game on</span></span>, <br>
-        nie <span class="delicious" ><span class="cross-out">game over</span></span>    
-    </div>
-    <a href="https://enviro-up.netlify.com/packs/"><div class="name-question">Si pripraveny na zmenu? </div></a>
-  </div>
-
-  <div class="projekt-background">
-    <div class="projekt-name">~<span class="delicious"> Ciel projektu </span>~</div>
-
-    <div class="projekt-90">
-      <div class='projekt-inner'>
-        Úlohou projektu Enviro Up je interaktívnou formou povzbudiť mladých ľudí, aby sa aktívne vzdelávali a činili v environmentálnej oblasti. Veríme, že mladí ľudia vedia prevziať zodpovednosť, vyjadriť názor, kriticky myslieť, vyhodnocovať fakty a uplatňovať efektívne princípy. Mládež už od 14teho roku je pre nás rovnocenným partnerom. Vidíme, že neberú ochranu životného prostredia len ako ďalšiu módnu vlnu. Práve naopak, snažia sa vyhľadávať konštruktívne riešenia. Pomocou vedcov rozlišujú dezinformácie skreslené emóciami od objektívnych faktov. Ponúkame im preto dostupnosť informácií, možnosť sebarealizovania a pomoc odborníkov v oblasti životného prostredia.   
-      </div>
-    </div>
-
-  </div>
-
-<div class="autor-background">
-  <div class="autor-name">~<span class="delicious"> Ako vzniklo Enviro-up </span>~</div>
-  <div class="autor-inner-60">
-    <div class="autor-text">
-        weeeee eeeeeee eeeee eeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeee 
-        weeeee eeeeeee eeeee eeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeee
-        weeeee eeeeeee eeeee eeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeee
-        weeeee eeeeeee eeeee eeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeee
-        weeeee eeeeeee eeeee eeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeee
-        weeeee eeeeeee eeeee eeeeeeeeeee eeeeeeeeeeeee eeeeeee eeeeee
-    </div>
-  </div>
-  <div class="autor-inner-40">
-    <div class="autor-image-background">
-      <div class="autor-image-padding"><img class="autor-image" src="/icon.png"></div>
-    </div>
-  </div>
-</div>
 
 
-
-
-<div class="choose-background">
-  <div class="choose-name">~<span class="delicious"> Zapoj sa aj ty </span>~</div>
-  <div class="choose-text">
-    Aj keď sa tieto takmer zanedbateľné akcie zdajú ako kvapka v mori, tvoje správanie sa stáva príkladom pre ľudí v tvojom okolí. Jednoduché úkony ako tieto ti pomôžu prehodnotiť, čo je dôležité a naberieš tým základné informácie. 
-  </div>
-
-  <div class="choose-column">
-    <div class="choose-column-inside">
-      <div class="choose-icon-background">
-        <img src="https://enviro-up.netlify.com/images/startup-pack.png" class="choose-icon-image">
-      </div>
-      <div class="choose-column-name">Vylepsi si okolie</div>
-      <div class="choose-column-text">
-        reee e e rre  er r e ree re   re r e re   er e rreee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-        reee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-        reee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-      </div>
-
-      <a href="https://enviro-up.netlify.com/packs/"><div style="background-color:rgb(85, 214, 108);" class="choose-column-button">ZISTI VIAC ></div></a>
-
-    </div>
-  </div>
-
-
-
-
-  <div class="choose-column">
-    <div class="choose-column-inside">
-      <div class="choose-icon-background">
-        <img src="https://enviro-up.netlify.com/images/zeleny-kalendar.png" class="choose-icon-image">
-      </div>
-      <div class="choose-column-name">Pomoz vo vacsom</div>
-      <div class="choose-column-text">
-        reee e e rre  er r e ree re   re r e re   er e rreee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-        reee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-        reee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-      </div>
-
-      <a href="https://enviro-up.netlify.com/zeleny_kalendar/"><div style="background-color:rgb(85, 214, 73);" class="choose-column-button">ZISTI VIAC ></div></a>
-
-    </div>
-  </div>
-
-
-
-
-
-  <div class="choose-column">
-    <div class="choose-column-inside">
-      <div class="choose-icon-background">
-        <img src="https://enviro-up.netlify.com/images/info.png" class="choose-icon-image">
-      </div>
-      <div class="choose-column-name">Citaj a Share-uj</div>
-      <div class="choose-column-text">
-        reee e e rre  er r e ree re   re r e re   er e rreee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-        reee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-        reee e e rre  er r e ree re   re r e re   er e re rer e re re re r e re e ee re r r e re e e rer r e re
-      </div>
-
-      <a href="https://enviro-up.netlify.com/"><div class="choose-column-button">ZISTI VIAC ></div></a>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-<div class="contact-background">
-  <div class="autor-name">~<span class="delicious"> Otazky? Napis </span>~</div>
-  <div class="objednavka-inner">
-
-    <div class="objednavka-inner-90">
-        <input class="objednavka-inner-input" type="text" id="email" placeholder="Email">        
-    </div>
-
-    <div class="objednavka-inner-90">
-        <textarea class="objednavka-inner-input-text" type="textarea" id="text" placeholder="Sem piste svoje otazky, podmety, ..."></textarea>
-    </div>
-
-   <div class="objednavka-inner-90">
-        <div class="objednavka-inner-button">Odoslat</div>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- treba pridat div o tom, kto sme -->
+  <div class="temy">
+    <div class="temy-name">~ Zisti viac o ~</div>
+    <div class="temy-inner-90">
   
+      <img onclick='odpad()' id='1' src="/odpad/odpad.PNG" class="temy-inner-image">
+      <img onclick='voda()' id='2' src="/voda/voda.PNG" class="temy-inner-image">
+      <img onclick='ovzdusie()' id='3' src="/ovzdusie/ovzdusie.PNG" class="temy-inner-image">
+      <img onclick='energia()' id='4' src="/energia/energia.PNG" class="temy-inner-image">
+      <img onclick='poda()' id='5' src="/poda/poda.PNG" class="temy-inner-image">
+  
+    </div>
+      <br><br><br>
+  
+    <div class="temy-more-background">
+  
+      <div class="temy-more-name" id="name">~ Tema ~</div>
+  
+      <div class="temy-more-text" id="text">
+  
+        weeeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeeeeeeee eeeeeee
+  
+      </div>
+  
+    </div>
+  
+    <br><br><br>
+  
+  </div>
+
+
+<script>
+
+  function odpad(){
+    vypis("~ Ako sme na tom s recyklaciou? ~", "1 bla bla bla", "1", "rgb(124, 129, 124, 0.8)");
+  }
+
+  function voda(){
+    vypis("~ Voda na Slovensku ~", "2 bla bla bla", "2", "rgb(87, 157, 179, 0.8)");
+  }
+
+  function ovzdusie(){
+    vypis("~ Ma Slovensku znecistene ovzdusie? ~", "3 bla bla bla", "3", "rgb(153, 223, 245, 0.8)");
+  }
+
+  function energia(){
+    vypis("~ Alternativna enegria ~", "4 bla bla bla", "4", "rgb(151, 255, 119, 0.8)");
+  }
+
+  function poda(){
+    vypis("~ Su krtkovia stale nazive? ~", "5 bla bla bla", "5", "rgb(94, 180, 94, 0.8)");
+  }
+
+
+  function vypis(name, text, id, color){
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("text").innerHTML = text;      
+
+    for(var i = 0; i < 5; i++){
+      document.getElementsByClassName("temy-inner-image")[i].style.backgroundColor = "white";
+      console.log(i);
+    }
+
+    document.getElementById(id).style.backgroundColor = color;
+
+  }
+
+  odpad();
+</script>
+
 </body>
+
+
 </html>
