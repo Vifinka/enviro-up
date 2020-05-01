@@ -45,6 +45,44 @@
             "name":"Cistenie strkovca",
             "text":"bla bl bla bla bla bla bla bka bka"
         }   
+    ], 
+    "celebration" : [
+        {
+            "day": "3",
+            "month": "3",
+            "name":"Svetový deň divej prírody",
+            "text":"bla bl bla bla bla bla bla bka bka"  
+        },
+        {
+            "day": "18",
+            "month": "3",
+            "name":"Svetový deň recyklácie",
+            "text":"bla bl bla bla bla bla bla bka bka"  
+        },
+        {
+            "day": "21",
+            "month": "3",
+            "name":"Medzinárodný deň lesov",
+            "text":"bla bl bla bla bla bla bla bka bka"  
+        },
+        {
+            "day": "22",
+            "month": "3",
+            "name":"Svetový deň vody",
+            "text":"bla bl bla bla bla bla bla bka bka"  
+        },
+        {
+            "day": "22",
+            "month": "4",
+            "name":"Svetový deň Zeme",
+            "text":"bla bl bla bla bla bla bla bka bka"  
+        },
+        {
+            "day": "22",
+            "month": "5",
+            "name":"Medzinárodný deň biodiverzity",
+            "text":"bla bl bla bla bla bla bla bka bka"  
+        }
     ],
     "org" : [
         {

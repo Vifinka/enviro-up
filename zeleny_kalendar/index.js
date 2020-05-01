@@ -11,6 +11,7 @@
     // the Event valuables
     var a_day = "<div class=\"info-kalendar-7th-day\"><div class=\"info-kalendar-bottom-day\" id=\"day\"></div></div>";
     var a_event ="<div class=\"info-org-half\"><div class=\"info-org-inner-top\"><div class=\"info-org-inner-top-name\" id=\"event-date\">dd.mm.rrrr</div></div><div class=\"info-org-inner-bottom\"><div class=\"info-org-inner-bottom-event\" id=\"event-name\">Upratovanie Dunaja</div><div class=\"info-org-inner-bottom-org\"><a id=\"event-org\" href=\"\">TeamTree.org</a></div><div class=\"info-org-inner-bottom-info\" id=\"event-text\">reee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee</div></div></div>";
+    var a_celebration ="<div class=\"info-org-half\"><div class=\"info-org-inner-top-celeb\"><div class=\"info-org-inner-top-name\" id=\"celeb-date\">dd.mm./div></div><div class=\"info-org-inner-bottom\"><div class=\"info-org-inner-bottom-event\" id=\"celeb-name\">Upratovanie Dunaja</div><div class=\"info-org-inner-bottom-info\" id=\"celeb-text\">reee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee eee eeee eeee eee eee eeee eeeee eeee eeeeee eee eeeee eeee eee</div></div></div>";
     var Org = "";
     var Events = "";
   
@@ -19,6 +20,7 @@
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(this.responseText);
             Events = response.events;
+            Celebration = responce.celebration;
             console.log(Events);
             calendar();
             Org = response.org;
@@ -68,11 +70,31 @@ function calendar(){
         create_event(Events[l].day, Events[l].month, Events[l].year, Events[l].org, Events[l].name, Events[l].link, Events[l].text, l);
       }
     }
+
+    // checking if there is a celebration during this day
+    for(var l = 0; l < Celebration.length; l++){
+      if((i + 1) == Celebration[l].day && (month_num + 1) == Celebration[l].month){
+        document.getElementById("day").className += " info-kalendar-bottom-day-celeb";
+        create_celeb(Celebration[l].day, Celebration[l].month, Events[l].name, Events[l].text, l);
+      }
+    }
   
     document.getElementById("day").id += i + 1;
   }
 } 
   
+  // the celebration function
+  function create_event(day, month, name, text, i){
+    document.getElementById("event-background").innerHTML += a_celebration;
+    document.getElementById("celeb-date").innerHTML = day + "." + month + ".";
+    document.getElementById("celeb-name").innerHTML = name;
+    document.getElementById("celeb-text").innerHTML = text;
+  
+    document.getElementById("celeb-name").id += "-" + i;
+    document.getElementById("celeb-date").id += "-" + i;
+    document.getElementById("celeb-text").id += "-" + i;
+  }
+
   // the event function
   function create_event(day, month, year, org, name, link, text, i){
     document.getElementById("event-background").innerHTML += a_event;
