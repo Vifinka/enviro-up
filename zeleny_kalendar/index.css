@@ -5,7 +5,7 @@ body{
     background-color: rgb(29, 29, 29);
     }
 
-  @font-face { font-family: Delicious; font-weight: bold; src: url('https://enviro-up.netlify.com/packs/joystix monospace.ttf');}
+  @font-face { font-family: Delicious; font-weight: bold; src: url('https://enviro-up.netlify.app/packs/joystix monospace.ttf');}
 
 .menu {
   list-style-type: none;
