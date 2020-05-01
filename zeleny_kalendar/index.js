@@ -75,7 +75,7 @@ function calendar(){
     for(var l = 0; l < Celebration.length; l++){
       if((i + 1) == Celebration[l].day && (month_num + 1) == Celebration[l].month){
         document.getElementById("day").className += " info-kalendar-bottom-day-celeb";
-        create_celeb(Celebration[l].day, Celebration[l].month, Events[l].name, Events[l].text, l);
+        create_celeb(Celebration[l].day, Celebration[l].month, Celebration[l].name, Celebration[l].text, l);
       }
     }
   
