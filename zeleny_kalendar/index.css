@@ -255,6 +255,7 @@ ul li:hover ul{
 
 .info-org-inner-bottom-celeb{
   border:black 3px dashed;
+  border-top:0px;
 }
 
 .info-org-inner-top-name{
