@@ -84,7 +84,7 @@ function calendar(){
 } 
   
   // the celebration function
-  function create_event(day, month, name, text, i){
+  function create_celeb(day, month, name, text, i){
     document.getElementById("event-background").innerHTML += a_celebration;
     document.getElementById("celeb-date").innerHTML = day + "." + month + ".";
     document.getElementById("celeb-name").innerHTML = name;
