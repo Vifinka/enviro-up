@@ -20,7 +20,7 @@
         if (this.readyState == 4 && this.status == 200) {
             var response = JSON.parse(this.responseText);
             Events = response.events;
-            Celebration = responce.celebration;
+            Celebration = response.celebration;
             console.log(Events);
             calendar();
             Org = response.org;
