@@ -1,9 +1,9 @@
 {
     "events" : [
         {
-            "day": "17",
-            "month": "12",
-            "year": "2019",
+            "day": "22",
+            "month": "5",
+            "year": "2020",
             "link":"",
             "org":"Harabin Smiesky",
             "name":"Zbieranie smeti",
@@ -12,7 +12,7 @@
         {
             "day": "22",
             "month": "12",
-            "year": "2019",
+            "year": "2020",
             "link":"",
             "org":"uWu OwO",
             "name":"Spievacie holubky",
@@ -20,8 +20,8 @@
         },
         {
             "day": "3",
-            "month": "12",
-            "year": "2019",
+            "month": "5",
+            "year": "2020",
             "link":"",
             "org":"open-slovakia",
             "name":"Cistenie strkovca",
@@ -29,7 +29,7 @@
         },
         {
             "day": "16",
-            "month": "1",
+            "month": "5",
             "year": "2020",
             "link":"",
             "org":"uWu OwO",
@@ -38,7 +38,7 @@
         },
         {
             "day": "5",
-            "month": "1",
+            "month": "5",
             "year": "2020",
             "link":"",
             "org":"open-slovakia",
