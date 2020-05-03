@@ -82,7 +82,98 @@
             "month": "5",
             "name":"Medzinárodný deň biodiverzity",
             "text":"bla bl bla bla bla bla bla bka bka"  
+        },
+        {
+            "day":"23",
+            "month":"5",
+            "name":"Svetový deň korytnačiek",
+            "text":"uwu korytnacky"
+        },
+        {
+            "day":"5",
+            "month":"6",
+            "name":"Svetový deň životného prostredia",
+            "text":"weeee eee eeeee ee"
+        },
+        {
+            "day":"8",
+            "month":"6",
+            "name":"Svetový deň oceánov",
+            "text":"hmmmmmmmmmmmmmm"
+        },
+        {
+            "day":"21",
+            "month":"6",
+            "name":"Deň kvetov",
+            "text":"slivky"
+        },
+        {
+            "day":"27",
+            "month":"6",
+            "name":"Svetový deň rybárstva",
+            "text":""
+        },
+        {
+            "day":"16",
+            "month":"9",
+            "name":"Medzinárodný deň ochrany ozónovej vrstvy",
+            "text":"bye-bye america"
+        },
+        {
+            "day":"22",
+            "month":"9",
+            "name":"Svetový deň bez áut",
+            "text":""
+        },
+        {
+            "day":"24",
+            "month":"9",
+            "name":"Európsky deň agrobiodiverzity",
+            "text":""
+        },
+        {
+            "day":"4",
+            "month":"10",
+            "name":"Svetový deň ochrany zvierat",
+            "text":""
+        },
+        {
+            "day":"20",
+            "month":"10",
+            "name":"Medzinárodný deň stromov",
+            "text":""
+        },
+        {
+            "day":"24",
+            "month":"10",
+            "name":"Medzinárodný deň boja proti zmene klímy",
+            "text":""
+        },
+        {
+            "day":"6",
+            "month":"11",
+            "name":"Medzinárodný deň ochrany životného prostredia pred ničením počas vojny a ozbrojeného konfliktu",
+            "text":""
+        },
+        {
+            "day":"19",
+            "month":"11",
+            "name":"Medzinárodný deň toaliet",
+            "text":""
+        },
+        {
+            "day":"15",
+            "month":"12",
+            "name":"Svetový deň pôdy",
+            "text":""
+        },
+        {
+            "day":"11",
+            "month":"12",
+            "name":"Medzinárodný deň hôr",
+            "text":""
         }
+        
     ],
     "org" : [
         {
