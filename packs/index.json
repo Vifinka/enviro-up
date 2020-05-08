@@ -1,18 +1,6 @@
 {
     "packs" : [
         {
-            "difficulty": "easy",
-            "name": "Pukance",
-            "type":"Voda",
-            "info": "reeeeeeeeee eeeeeeeeee eeee eeee",
-            "pomocky": "<li>reee</li><li>reeeeeeeeee</li>",
-            "postup":"<li>ja neviem></li><li>reeeeeeeeeee</li>",
-            "photo_1":"-",
-            "photo_2":"-",
-            "pack_name": "Starter pack",
-            "video":"https://www.youtube.com/embed/wDgQdr8ZkTw"
-        },
-        {
             "difficulty":"easy",
             "name":"O čom sa hovorí?",
             "type":"Info",
@@ -29,18 +17,6 @@
             "name":"Kamarátka Flaška",
             "type":"Odpad",
             "info": "Používaj fľašku na viacnásobné použitie (sklenená, kovová, umelohmotná...), aby si si mal/-a do čoho napúšťať vodu. Netreba ich zbytočne vyhadzovať, ak ešte nedoslúžili svoju rolu. Taktiež netreba kupovať nadbytočný počet fliaš, keď i tak po jednom použití skončia v koši.",
-            "pomocky": "-",
-            "postup":"-",
-            "photo_1":"-",
-            "photo_2":"-",
-            "pack_name": "APOKALYPSA PLASTOV",
-            "video":"-"
-        },
-        {
-            "difficulty":"easy",
-            "name":"",
-            "type":"",
-            "info": "",
             "pomocky": "-",
             "postup":"-",
             "photo_1":"-",
@@ -98,15 +74,63 @@
         },
         {
             "difficulty":"easy",
-            "name":"",
-            "type":"",
-            "info": "",
-            "pomocky": "",
-            "postup":"",
+            "name":"Popierači klimatickej zmeny",
+            "type":"Info",
+            "info": "Ak si sa už niekedy stretol/-a s niekým, kto považuje klimatické zmeny za hoax alebo si nemyslí, že je to tak vážne, tu je zopár protiargumentov, ktoré ti môžu pomôcť. Nezabúdaj sa v správať k danej osobe so zdravým rešpektom a najprv daj priestor danej osobe na vyjadrenie svojho postoja a neber ju/jeho za nepriateľa.",
+            "pomocky": "-",
+            "postup":"-",
             "photo_1":"-",
             "photo_2":"-",
-            "pack_name": "",
-            "video":""
+            "pack_name": "MAJSTER DEBATY",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Argument 1",
+            "type":"Info",
+            "info": "<b>„Zmeny klímy sú pre planétu prirodzené, tak aj terajšia zmena musí byť prirodzená.“</b> – Aj keď je vedecky dokázané, že v minulosti nastávali rôzne zmeny klímy po celej planéte, je aj vedecky dokázané, že zmena klímy od industriálnej revolúcie je podstatne rapídnejšia ako ostatné zaznamenané zmeny. ",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "MAJSTER DEBATY",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Argument 2",
+            "type":"Info",
+            "info": "<b>„Ľuďmi vyprodukované emisie CO2 sú neporovnateľne menšie ako emisie, ktoré zem (tj. fauna, oceány, sopky...) prirodzene vyprodukuje.“</b> -  Tak ako existuje kolobeh vody v prírode, tak existuje aj kolobeh CO2, čiže čo sa v prírode vyprodukuje, to sa aj spotrebuje a potom sa to opakuje v cykloch. Ľudia však CO2 spaľovaním fosílnych palív len vypúšťajú a nič neabsorbujú, čím vzniká nadbytok CO2 a s tým aj skleníkový efekt, ktorý sa vyvíja do klimatickej zmeny.",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "MAJSTER DEBATY",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Argument 3",
+            "type":"Info",
+            "info": "<b>„Živočíšne a rastlinné druhy sa vedia k zmene klímy adaptovať.“</b> – Áno, vedia sa adaptovať, avšak nie k takej prudkej zmene ako je táto. Sme svedkami masívneho vymierania druhov, ktoré sa stáva len zopárkrát za život Zeme. ",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "MAJSTER DEBATY",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Viac zistíš...",
+            "type":"Info",
+            "info": "Pre ďalšie protiargumenty si pozri <i><a href=”https://skepticalscience.com/factmythfallacy.php”>stránku</a></i>(v angličtine) alebo nám napíš.",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "MAJSTER DEBATY",
+            "video":"-"
         },
         {
             "difficulty":"easy",
