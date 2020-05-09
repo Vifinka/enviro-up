@@ -124,7 +124,7 @@
             "difficulty":"easy",
             "name":"Viac zistíš...",
             "type":"Info",
-            "info": "Pre ďalšie protiargumenty si pozri <i><a href=”https://skepticalscience.com/factmythfallacy.php”>stránku</a></i>(v angličtine) alebo nám napíš.",
+            "info": "Pre ďalšie protiargumenty si pozri <i><a href=”skepticalscience.com/factmythfallacy.php”>stránku</a></i> (v angličtine) alebo nám napíš.",
             "pomocky": "-",
             "postup":"-",
             "photo_1":"-",
@@ -134,15 +134,99 @@
         },
         {
             "difficulty":"easy",
+            "name":"O čom sa hovorí?",
+            "type":"Info",
+            "info": "Pestovanie / chov, spracovanie, balenie, skladovanie, dovážanie do obchodov, dovážanie do domácností, vyhadzovanie – toto je dobrodružná cesta našich potravín. Každý potrebuje jedlo na prežitie, no nie vždy je to v súlade s prírodou, ktorá as kŕmi. Pri pestovaní sa používa veľké množstvo škodlivých pesticídov a hnojív. Chov vyžaduje hektáre a hektáre pôdy nie len pre zvieratá samotné, ale aj pre pestovanie krmiva pre zvieratá. Prevoz jedla vyžaduje fosílne palivá vypúšťajúce skleníkové plyny. Potraviny sú balené do vrstiev obalov, z ktorých mnohé sa náročne recyklujú. A v neposlednom rade, častokrát sa jedlom plytvá a vyhadzuje sa na skládky, s ktorými nevieme narábať. Ponúkame ti zopár rád, ako sa zelenšie stravovať. ",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Dobré, domácke",
+            "type":"Jedlo",
+            "info": "Ak sa dá, uprednostňuj jedenie čerstvých lokálných potraví. Vďaka tomuto sa ušetria fosílne palivá na ich prepravu, ktoré vypúšťajú CO2 do ozvdušia",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Chutné, sezónne",
+            "type":"Jedlo",
+            "info": "Jedz potraviny v sezóne, ktorá im prislúcha, aby sa potraviny nemuseli dovážať zo vzdialených krajín",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Dovidenia slaninka!",
+            "type":"Jedlo",
+            "info": "Jedz menej mäsa a živočíšnych produktov, aby sa nemuselo spotrebovať viac pôdy na pestovanie krmiva pre nich",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Domáci kuchár",
+            "type":"Jedlo",
+            "info": "Keď môžeš, navar si, respektíve jedz menej spracované jedlo, aby si vedel/-a, čo sa v tom nachádza",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Žiadne jednorázovky",
+            "type":"Odpad",
+            "info": "Skús jesť takým spôsobom, aby si nevyužíval/-a nadbytočné obaly (radšej choď do kantíny, kde sa riad umýva a znovu používa ako do fastfoodu kde ti dávajú plastový príbor a tanier na jedno použitie)",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
+            "name":"Domáci záhradník",
+            "type":"Bio",
+            "info": "Taktiež jedno z riešení je zariadenie si vlastnej záhradky, vôbec nemusí byť veľká. Nemáš záhradu? Tak si vypestuj niečo v kochlíku na balóne. Nemusí sa z teba stať majster farmár ktorý pestuje paradajky alebo hrozno na balkóne, kľudne môžeš začať bylinkami, či malinami alebo jahodami.",
+            "pomocky": "-",
+            "postup":"-",
+            "photo_1":"-",
+            "photo_2":"-",
+            "pack_name": "KONZUMUJEM VŠETKO",
+            "video":"-"
+        },
+        {
+            "difficulty":"easy",
             "name":"",
             "type":"",
             "info": "",
-            "pomocky": "",
-            "postup":"",
+            "pomocky": "-",
+            "postup":"-",
             "photo_1":"-",
             "photo_2":"-",
             "pack_name": "",
-            "video":""
+            "video":"-"
         }
     ]
 }
