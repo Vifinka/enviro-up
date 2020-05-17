@@ -103,7 +103,7 @@ ul li:hover ul{
 
 .temy{
   width:100%;
-  background-color:#ffffff;
+  background-color:#080808;
   text-align:center;
 }
 
@@ -112,7 +112,7 @@ ul li:hover ul{
     text-align:center;
     font-family: 'Delicious', serif;
     font-size:40px;
-    color:black;
+    color:white;
     padding:40px;
 }
 
@@ -135,7 +135,7 @@ ul li:hover ul{
 
 .temy-inner-image:hover{
   transition:1s ease;
-  background-color:rgb(230, 230, 230);
+  background-color:rgb(88, 216, 146);
 }
 
 .temy-more-background{
@@ -145,6 +145,7 @@ ul li:hover ul{
   color:white;
   margin:auto;
   text-align:center;
+  transition: all ease-in 1s;
 }
 
 .temy-more-name{
@@ -200,7 +201,7 @@ ul li:hover ul{
     </div>
       <br><br><br>
   
-    <div class="temy-more-background">
+    <div class="temy-more-background" id="background-change">
   
       <div class="temy-more-name" id="name">~ Tema ~</div>
   
@@ -242,10 +243,12 @@ ul li:hover ul{
 
   function vypis(name, text, id, color){
     document.getElementById("name").innerHTML = name;
-    document.getElementById("text").innerHTML = text;      
+    document.getElementById("text").innerHTML = text;   
+    document.getElementById("background-change").style.backgroundColor = color;
+
 
     for(var i = 0; i < 5; i++){
-      document.getElementsByClassName("temy-inner-image")[i].style.backgroundColor = "white";
+      document.getElementsByClassName("temy-inner-image")[i].style.backgroundColor = "#080808";
       console.log(i);
     }
 
