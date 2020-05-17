@@ -2,6 +2,15 @@
 
 <head>
 
+  <meta charset="UTF-8">
+  <meta name="author" content="Viktoria Vargicova">
+  <meta name="keywords" content="enviro, enviroment, za ludi, organizacia, ECO, ekologia, enviro-up">
+  <meta name="description" content="Zaujimas sa o envirometalnych problemoch a ich rieseniach? Tu ziskas info, ktore potrebujes!">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://enviro-up.netlify.app/logo.svg" type="image/png">
+
+  <title>Enviro-up - kalendar</title>
 
 </head>
 
@@ -14,7 +23,7 @@ body{
     background-color: rgb(29, 29, 29);
   }
 
-  @font-face { font-family: Delicious; src: url('joystix monospace.ttf');}
+  @font-face { font-family: Delicious; src: url('https://enviro-up.netlify.app/joystix monospace.ttf');}
 
 .menu {
   list-style-type: none;
@@ -221,23 +230,23 @@ ul li:hover ul{
 <script>
 
   function odpad(){
-    vypis("~ Odpad ~", "1 bla bla bla", "1", "rgb(124, 129, 124, 0.8)");
+    vypis("~ Odpad ~", "1 bla bla bla", "1", "rgb(38, 255, 80, 0.8)");
   }
 
   function voda(){
-    vypis("~ Voda ~", "2 bla bla bla", "2", "rgb(87, 157, 179, 0.8)");
+    vypis("~ Voda ~", "2 bla bla bla", "2", "rgb(88, 253, 112, 0.8)");
   }
 
   function ovzdusie(){
-    vypis("~ Ovzdusie ~", "3 bla bla bla", "3", "rgb(153, 223, 245, 0.8)");
+    vypis("~ Ovzdusie ~", "3 bla bla bla", "3", "rgb(88, 216, 146, 0.8)");
   }
 
   function energia(){
-    vypis("~ Energia ~", "4 bla bla bla", "4", "rgb(151, 255, 119, 0.8)");
+    vypis("~ Energia ~", "4 bla bla bla", "4", "rgb(55, 192, 156, 0.8)");
   }
 
   function poda(){
-    vypis("~ Biodiverzita ~", "5 bla bla bla", "5", "rgb(94, 180, 94, 0.8)");
+    vypis("~ Biodiverzita ~", "5 bla bla bla", "5", "rgb(55, 192, 188, 0.8)");
   }
 
 
@@ -248,7 +257,7 @@ ul li:hover ul{
 
 
     for(var i = 0; i < 5; i++){
-      document.getElementsByClassName("temy-inner-image")[i].style.backgroundColor = "#080808";
+      document.getElementsByClassName("temy-inner-image")[i].style.backgroundColor = "rgb(20, 20, 20)";
       console.log(i);
     }
 
