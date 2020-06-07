@@ -1,0 +1,149 @@
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="author" content="Viktoria Vargicova">
+        <meta name="keywords" content="Zeleny kalendar, enviro, enviroment, za ludi, organizacia, ECO, ecologia">
+        <meta name="description" content="Po slovensku su rozne akcie a dobrovolne pomoci. Zapoj sa aj ty!">
+    
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/index.css">
+        <link rel="icon" href="https://enviro-up.netlify.app/logo.svg" type="image/png">
+    
+        <title>Enviro-up - energia</title>
+
+    </head>
+    
+    <style>
+        
+        body{
+            margin:0;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        @font-face { font-family: Delicious; src: url('https://enviro-up.netlify.app/joystix monospace.ttf');}
+       
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+  width: 100%;
+}
+
+.menu-choice{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+  float: left;
+}
+
+.menu-choice:hover {
+  transition: all 0.5s ease-in;
+}
+
+.li-logo{
+    font-family: Delicious, sans-sherif;
+}
+
+.priprava:hover{
+  background-color:rgb(200, 200, 200);
+  color:#000;
+}
+.voda:hover{
+  background-color:rgb(87, 157, 179);
+  color:#fff;
+}
+.ovzdusie:hover{
+  background-color:rgb(153, 223, 245);
+  color:#000000;
+}
+.odpad:hover{
+  background-color:rgb(124, 129, 124);
+}
+.ene:hover{
+  background-color:rgb(151, 255, 119);
+  color:#000000;
+}
+.poda:hover{
+  background-color:rgb(94, 180, 94);
+  color:#ffffff;
+}
+
+ul li ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+
+ul li ul li{
+  float:left;
+  z-index: -1;
+  text-decoration: none;
+  display: block;
+}
+            
+ul li ul{
+  display: none;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul li:hover ul{ 
+  display: block;
+}
+
+.menu-choice-sub:hover{
+  background-color:rgb(94, 180, 94);
+  color:black;
+  transition: all 0.5s ease-in;
+}
+
+        .intro-background{
+            width:100%;
+            padding-top:200px;
+            padding-bottom:200px;
+            background-color:black;
+            background-image: url("intro.PNG");
+            text-align:center;
+            background-size:cover;
+            font-size: 40px;
+            font-family: Delicious;
+            color:white;
+        }
+    </style>
+    
+    <body>
+        <ul class="menu">
+            <li><a class="menu-choice" href="https://enviro-up.netlify.com/"><span class="li-logo">Enviro-up</span></a></li>
+            <li><a class="priprava menu-choice" href="http://enviro-up.netlify.com/">Domov</a></li>
+            <li><a class="ene menu-choice" href="/packs">Packs</a></li>
+            <li><a class="poda menu-choice" href="/zeleny_kalendar">Zeleny kalendar</a></li>
+            <li><a class="voda menu-choice" href="/info">Vzdelaj sa <span>&#x25B8;</span></a>
+            
+              <ul>
+                <li><a href="/voda" class="menu-choice-sub">Voda</a></li>
+                <li><a href="#" class="menu-choice-sub">Odpad</a></li>
+                <li><a href="#" class="menu-choice-sub">Ovzdusie</a></li>
+                <li><a href="/energia" class="menu-choice-sub">Energia</a></li>
+                <li><a href="#" class="menu-choice-sub">Biodiverzita</a></li>
+              </ul>
+            
+            </li>
+          </ul>
+
+        <div class="intro-background">Energia</div>
+
+    </body>
+
+</html>
