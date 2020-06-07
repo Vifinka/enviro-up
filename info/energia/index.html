@@ -122,6 +122,7 @@ ul li:hover ul{
             color:white;
             text-shadow: #000 3px 3px;
         }
+        
     </style>
     
     <body>
@@ -143,8 +144,33 @@ ul li:hover ul{
             </li>
           </ul>
 
-        <div class="intro-background">Energia</div>
+        <div class="intro-background" id="intro">Energia</div>
 
     </body>
+
+<script>
+
+function lightswitch() {
+  var color_now = document.getElementById("intro").style.backgroundColor;
+
+  if(color_now == "white"){
+  document.getElementById("intro").style.backgroundImage = "url(\"intro.PNG\")";
+  document.getElementById("intro").style.backgroundColor = "black";
+  document.getElementById("intro").style.color = "white";
+  document.getElementById("intro").style.textShadow = "2px 2px yellow";
+  }
+  else{
+  document.getElementById("intro").style.backgroundImage = "url(\"intro-2.PNG\")";
+  document.getElementById("intro").style.backgroundColor = "white";
+  document.getElementById("intro").style.color = "black";
+  document.getElementById("intro").style.textShadow = "none";
+  }
+
+  setTimeout(lightswitch, 5000);
+
+}
+
+lightswitch();
+</script>
 
 </html>
