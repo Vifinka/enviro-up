@@ -163,15 +163,32 @@ ul li:hover ul{
     font-family: 'Merriweather', serif;
     font-size:30px;
     padding:40px;
-    color:#fff;
+    padding-bottom:30px;
+    color:black;
 }
 
 .temy-more-text{
     width:80%;
     margin:auto;
-    color:white;
+    color:black;
+    font-family:bold;
     text-align:center;
     padding:15px;
+    padding-top:0px;
+}
+
+.temy-more-button{
+  padding:10px;
+  background-color:black;
+  margin:auto;
+  margin-top:20px;
+  color:white;
+  width:80px;
+}
+
+.temy-more-button-link{
+  text-decoration: none;
+  font-family:Delicious;
 }
 
 .info-intro{
@@ -253,11 +270,9 @@ ul li:hover ul{
 
     <div class="temy-more-name" id="name">~ Tema ~</div>
 
-    <div class="temy-more-text" id="text">
+    <div class="temy-more-text" id="text"></div>
 
-      weeeeeeeee eeeeeeeeee eeeeeeeeeee eeeeeeeeeeee eeeeeee
-
-    </div>
+    <div class="temy-more-button"><a id="link" class="temy-more-button-link" href="">Viac ></a></div>
 
   </div>
 
@@ -269,30 +284,32 @@ ul li:hover ul{
 <script>
 
   function odpad(){
-    vypis("~ Odpad ~", "1 bla bla bla", "1", "rgb(38, 255, 80, 0.8)");
+    vypis("~ Odpad ~", "1 bla bla bla", "1", "rgb(38, 255, 80, 0.8)", "/odpad");
   }
 
   function voda(){
-    vypis("~ Voda ~", "2 bla bla bla", "2", "rgb(88, 253, 112, 0.8)");
+    vypis("~ Voda ~", "2 bla bla bla", "2", "rgb(88, 253, 112, 0.8)", "/voda");
   }
 
   function ovzdusie(){
-    vypis("~ Ovzdusie ~", "3 bla bla bla", "3", "rgb(88, 216, 146, 0.8)");
+    vypis("~ Ovzdusie ~", "3 bla bla bla", "3", "rgb(88, 216, 146, 0.8)", "/ovzdusie");
   }
 
   function energia(){
-    vypis("~ Energia ~", "4 bla bla bla", "4", "rgb(55, 192, 156, 0.8)");
+    vypis("~ Energia ~", "4 bla bla bla", "4", "rgb(55, 192, 156, 0.8)", "/energia");
   }
 
   function poda(){
-    vypis("~ Biodiverzita ~", "5 bla bla bla", "5", "rgb(55, 192, 188, 0.8)");
+    vypis("~ Biodiverzita ~", "5 bla bla bla", "5", "rgb(55, 192, 188, 0.8)", "/poda");
   }
 
 
-  function vypis(name, text, id, color){
+  function vypis(name, text, id, coluor, link){
     document.getElementById("name").innerHTML = name;
     document.getElementById("text").innerHTML = text;   
-    document.getElementById("background-change").style.backgroundColor = color;
+    document.getElementById("background-change").style.backgroundColor = coluor;
+    document.getElementById("link").href = link;
+    document.getElementById("link").style.color = coluor;
 
 
     for(var i = 0; i < 5; i++){
@@ -300,7 +317,7 @@ ul li:hover ul{
       console.log(i);
     }
 
-    document.getElementById(id).style.backgroundColor = color;
+    document.getElementById(id).style.backgroundColor = colour;
 
   }
 
