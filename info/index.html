@@ -191,6 +191,14 @@ ul li:hover ul{
   font-family:Delicious;
 }
 
+.temy-more-button:hover{
+  background-color: none;
+}
+
+.temy-more-button-link:hover{
+  color:black;
+}
+
 .info-intro{
   width:100%;
 }
@@ -272,7 +280,8 @@ ul li:hover ul{
 
     <div class="temy-more-text" id="text"></div>
 
-    <div class="temy-more-button"><a id="link" class="temy-more-button-link" href="">Viac ></a></div>
+    <div class="temy-more-button"><a id="link" class="temy-more-button-link" href="" onmouseover="this.style.color='white';" 
+      onmouseout="this.style.color=chosenColor;">Viac ></a></div>
 
   </div>
 
@@ -282,6 +291,8 @@ ul li:hover ul{
 
 
 <script>
+
+  chosenColor = "black";
 
   function odpad(){
     vypis("~ Odpad ~", "1 bla bla bla", "1", "rgb(38, 255, 80, 0.8)", "/odpad");
@@ -308,8 +319,9 @@ ul li:hover ul{
     document.getElementById("name").innerHTML = name;
     document.getElementById("text").innerHTML = text;   
     document.getElementById("background-change").style.backgroundColor = coluor;
-    document.getElementById("link").href = link;
+    document.getElementById("link").href = "/info" + link;
     document.getElementById("link").style.color = coluor;
+    chosenColor = coluor;
 
 
     for(var i = 0; i < 5; i++){
@@ -317,7 +329,7 @@ ul li:hover ul{
       console.log(i);
     }
 
-    document.getElementById(id).style.backgroundColor = colour;
+    document.getElementById(id).style.backgroundColor = coluor;
 
   }
 
