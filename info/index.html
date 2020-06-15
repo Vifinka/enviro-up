@@ -360,32 +360,20 @@ ul li:hover ul{
 </div>
 
 <div class="pojmy-background">
-  <div class="pojmy-name">15 pojmov, ktore musis vediet</div>
+  <div class="pojmy-name" id="pojmy-number">N pojmov, ktore musis vediet</div>
     <div class="pojmy-choice-background">
       <div class="pojmy-choice-corner">
-        <div style="background-color:rgb(34,193,195);" class="pojmy-choice-square"><</div>
+        <div style="background-color:rgb(34,193,195);" onclick="backward()" class="pojmy-choice-square"><</div>
       </div>
 
-      <div class="pojmy-choice-name">WEEEEEEEEEEEEEEEEEEEEEEEEEEE</div>
+      <div class="pojmy-choice-name" id="pojmy-name">WEEEEEEEEEEEEEEEEEEEEEEEEEEE</div>
 
       <div class="pojmy-choice-corner">
-        <div style="background-color:rgba(98,253,45,1)" class="pojmy-choice-square">></div>
+        <div style="background-color:rgba(98,253,45,1)" onclick="forward()" class="pojmy-choice-square">></div>
       </div>
     </div>
 
-  <div class="pojmy-choice-text">
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-    laaaaaaaaa aaaaaaaa aaaaa aaaaaaaa aaaa aaaaaaaa aaaaaa aaaa
-  </div>
+  <div class="pojmy-choice-text" id="pojmy-text"></div>
 
 </div>
 
@@ -433,6 +421,40 @@ ul li:hover ul{
   }
 
   odpad();
+
+/////////   end of "sub" menu link  ////////////
+////// start of pojmy/////
+
+pojmy_name = ["KLIMATICKÁ ZMENA", "OBEHOVÁ EKONOMIKA", "UHLÍKOVÁ STOPA", "EURÓPSKY EKOLOGICKÝ DOHOVOR", "SDGs", "GREEN-WASHING", "UP-CYCLING", "ZERO WASTE", "ENERGETICKÁ EFEKTÍVNOSŤ", "PARÍŽSKA DOHODA (o zmene klímy)", "UHLÍKOVÁ NEUTRALITA", "ENERGETICKÁ CHUDOBA"];
+pojmy_text = ["nepriaznivé dlhodobé zmeny počasia a podnebí po celom svete spôsobené ľudskou činnosťou. Prispieva k tomu spaľovanie fosílnych palív a znečisťovanie životného prostredia.","stratégia udržateľného rozvoja, kde sa materiály a služby po spotrebe opätovne používajú, čím sa znižuje množstvo odpadu a znižuje sa spotreba energie.","vyjadruje množstvo skleníkových plynov z ľudskej aktivity","EU GREEN DEAL - „obsahuje plán opatrení na podporu účinnejšieho využívania zdrojov prostredníctvom prechodu na čisté a obehové hospodárstvo, ako aj plán opatrení na zastavenie klimatických zmien, zabránenie straty biodiverzity a na zníženie znečisťovania.“","(Sustainable Development Goals) – ciele udržateľného rozvoja, konkrétne 17 cieľov zadaných OSN", "propagačná taktika, kde sa produkt alebo služba tvária ako ekologické, no v skutočnosti nie sú ", "opätovné použitie materiálu alebo veci tak, že má vyššiu hodnotu ako pôvodne", "spôsob života, ktorý sa snaží zamedziť tvoreniu odpadu, a to napr. kupovaním bezobalovo", "princíp znižovania spotreby a zamedzenie plytvania elektriny", "celosvetová dohoda, ktorá ma obmedziť spotrebu skleníkových plynov, pričom je súčasťou Rámcovej dohody OSN o zmene klímy", "rovnováha medzi emisiami skleníkových plynov a ich pohlcovaním z atmosféry.","keď domácnosť nemá dosť financií na zabezpečenie energií na jej fungovanie"];
+pojmy_count = 0;
+
+function forward(){
+  pojmy_count ++;
+  if(pojmy_count == (pojmy_name.length)){
+    pojmy_count = 0;
+  }
+  onward();
+}
+
+function backward(){
+  pojmy_count --;
+  if(pojmy_count == -1){
+    pojmy_count = (pojmy_name.length - 1);
+  }
+  onward();
+}
+
+function onward(){
+  console.log(pojmy_count);
+
+  document.getElementById("pojmy-text").innerText = pojmy_text[pojmy_count];
+  document.getElementById("pojmy-name").innerText = pojmy_name[pojmy_count] + " (" + (pojmy_count + 1) + "/" + pojmy_name.length + ")";
+}
+
+document.getElementById("pojmy-number").innerText = pojmy_name.length + " pojmov, ktore musis vediet";
+
+onward();
 </script>
 
 </body>
