@@ -254,8 +254,7 @@ ul li:hover ul{
   text-align:center;
   border:1% solid;
   border-radius: 10px;
-  background: rgb(34,193,195);
-  background: linear-gradient(90deg, rgba(34,193,195,1) 26%, rgba(98,253,45,1) 100%);
+  background: linear-gradient(90deg, rgb(133, 238, 240) 16%, rgb(174, 255, 147) 100%);
 }
 
 .pojmy-choice-corner{
@@ -285,16 +284,49 @@ ul li:hover ul{
   padding-top:40px;
   text-align:center;
   padding-bottom:40px;
-  background: rgb(34,193,195);
-  background: linear-gradient(90deg, rgba(34,193,195,1) 26%, rgba(98,253,45,1) 100%);
+  background: linear-gradient(90deg, rgb(133, 238, 240) 16%, rgb(174, 255, 147) 100%);
   border:1% solid;
   border-radius: 10px;
-  transition: all 0.5s ease-in;
 }
 
 .pojmy-choice-background{
   overflow:hidden;
 }
+
+.politics-background{
+  width:100%;
+  background-color:rgb(182, 248, 212);
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+.politics-background-third{
+  width:33.33%;
+  padding-top:40px;
+  float:left;
+}
+
+.politics-background-third-outline{
+  margin:auto;
+  width:75%;
+  background-color: white;
+  border-radius:10px;
+}
+
+.politics-background-image{
+  width:100%;
+  border-radius:10px;
+}
+
+.politics-background-text{
+  width:90%;
+  padding-top:20px;
+  text-align: center;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom: 20px;
+}
+
 </style>
 
 <body>
@@ -364,18 +396,49 @@ ul li:hover ul{
   <div class="pojmy-name" id="pojmy-number">N pojmov, ktore musis vediet</div>
     <div class="pojmy-choice-background">
       <div class="pojmy-choice-corner">
-        <div style="background-color:rgb(34,193,195);" onclick="backward()" class="pojmy-choice-square"><</div>
+        <div style="background-color:rgb(133, 238, 240);" onclick="backward()" class="pojmy-choice-square"><</div>
       </div>
 
       <div class="pojmy-choice-name" id="pojmy-name">WEEEEEEEEEEEEEEEEEEEEEEEEEEE</div>
 
       <div class="pojmy-choice-corner">
-        <div style="background-color:rgba(98,253,45,1)" onclick="forward()" class="pojmy-choice-square">></div>
+        <div style="background-color:rgb(174, 255, 147) " onclick="forward()" class="pojmy-choice-square">></div>
       </div>
     </div>
 
   <div class="pojmy-choice-text" id="pojmy-text"></div>
 
+</div>
+
+
+<div class="politics-background">
+  <div class="pojmy-name" id="pojmy-number">Politika + prostredie</div>
+  <div class="pojmy-choice-background">
+    <div class="politics-background-third">
+      <div class="politics-background-third-outline">
+        <img class="politics-background-image" src="sk.png">
+        <div class="politics-background-text">
+          uygyd isgdyg siufgsi iau disys gidf iay ieiiw ef wefou suofs dfoey fyef 9oyyf 8ofy iuew ef
+        </div>
+      </div>
+    </div>
+    <div class="politics-background-third">
+      <div class="politics-background-third-outline">
+        <img class="politics-background-image" src="eu.png">
+        <div class="politics-background-text">
+          uygyd isgdyg siufgsi iau disys gidf iay ieiiw ef wefou suofs dfoey fyef 9oyyf 8ofy iuew ef
+        </div>
+      </div>
+    </div>
+    <div class="politics-background-third">
+      <div class="politics-background-third-outline">
+        <img class="politics-background-image" src="un.jpg">
+        <div class="politics-background-text">
+          uygyd isgdyg siufgsi iau disys gidf iay ieiiw ef wefou suofs dfoey fyef 9oyyf 8ofy iuew ef
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
