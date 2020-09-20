@@ -432,6 +432,8 @@ option{
 .pack-link{
   color:rgb(79, 79, 255);
   text-decoration-line: none;
+  font-style:normal, bold;
+
 }
 
 .level-video{
